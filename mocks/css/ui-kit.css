@@ -1,0 +1,136 @@
+/* $grey-1: #4c4c4c */
+/* $grey-2: #ccc */
+
+body {
+  color: #2e384d;
+  font-family: "Lato", sans-serif;
+}
+
+/* text-colors */
+.text-primary {
+  color: #2e384d;
+}
+.text-disabled {
+  color: #aaa;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+  background-color: white;
+
+  box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
+
+  margin-top: 25px;
+  padding: 32px 45px 42px;
+}
+
+.card > h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  margin-left: -16px;
+}
+.card > h2 {
+  margin-left: -16px;
+  font-size: 1em;
+  margin-bottom: 16px;
+}
+.card > h1 + h2 {
+  margin-top: -16px;
+}
+.card > h2 + h2 {
+  margin-top: -16px;
+}
+.card > hr {
+  margin-left: -16px;
+}
+
+blockquote {
+  border-radius: 3px;
+  background-color: #ddd;
+  border-left: 5px solid #aaa;
+  margin: 0;
+  padding: 20px 20px 20px 40px;
+  font-style: italic;
+  position: relative;
+}
+
+blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -3px;
+  left: 10px;
+  font-size: 3em;
+  color: inherit;
+  font-family: cursive;
+}
+
+blockquote .author {
+  margin-top: 0.2em;
+  text-align: right;
+  display: block;
+  opacity: 0.7;
+}
+
+blockquote .author::before {
+  content: "‒ ";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  padding: 10px 15px;
+  background-color: aliceblue;
+}
+
+nav a:hover {
+  color: aquamarine;
+}
+
+button {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 5px 16px;
+  min-width: 200px;
+  font-size: 16px;
+  cursor: pointer;
+
+  /* colors */
+  color: white;
+  border-color: blue;
+  background-color: cornflowerblue;
+}
+
+button[disabled] {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+button.secondary {
+  border-color: red;
+  background-color: tomato;
+}
+
+button.secondary:hover {
+  background-color: red;
+}
+
+button + button {
+  margin-left: 10px;
+}
