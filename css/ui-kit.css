@@ -3,6 +3,7 @@
 
 body {
   color: #2e384d;
+  background-color: #01024e;
   font-family: "Lato", sans-serif;
 }
 
@@ -19,6 +20,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .card {
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -51,6 +53,22 @@ body {
 }
 .card > hr {
   margin-left: -16px;
+}
+
+header,
+footer {
+  text-align: center;
+  white-space: wrap;
+  color: whitesmoke;
+}
+
+header {
+  font-size: 3rem;
+  font-variant: small-caps;
+}
+
+header h1 {
+  margin-top: 0;
 }
 
 blockquote {
@@ -86,16 +104,33 @@ blockquote .author::before {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #2d5986;
+  padding: 10px 10%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  background-color: unset;
 }
 
 nav a {
   padding: 10px 15px;
-  background-color: aliceblue;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 nav a:hover {
-  color: aquamarine;
+  color: whitesmoke;
+}
+
+nav a + a {
+  border-left: 3px solid whitesmoke;
 }
 
 button {
@@ -133,4 +168,20 @@ button.secondary:hover {
 
 button + button {
   margin-left: 10px;
+}
+
+ul.row-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul.row-list li {
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 30px;
 }

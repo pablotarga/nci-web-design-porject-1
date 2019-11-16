@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+
+/* header {
+  height: 200px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+header h1 {
+  margin: 0px;
+  margin-bottom: 20px;
+} */
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+section.hero {
+  min-height: calc(100vh - 200px);
+}
+section .link-next {
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+#champion-1 {
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+  background: linear-gradient(to right, #e35d5b, #e53935);
+}
+#champion-2 {
+  background: #00c9ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #92fe9d, #00c9ff);
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+}
+
+nav.back-top {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
