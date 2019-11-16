@@ -1,0 +1,250 @@
+html{
+    background-image: url("dragon_rider_by_nick-deligaris-creative-commons-noncommercial.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #8c8cd9;
+}
+
+body {
+    
+    font-family: Helvetica;
+}
+
+header, footer{
+    text-align: center;
+    
+    color: #a22a7a;
+    
+    white-space: wrap;
+}
+
+header{
+    font-size: 3rem;
+    text-shadow: 3px 2px #8c8cd9;
+    font-variant: small-caps;
+}
+
+footer{
+    font-size: 1rem;
+
+}
+
+nav {
+    float: center;
+    width: 75%;
+    border: 5px;
+    border-width: 10px;
+    border-style: double;
+    border-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+
+    background-color: #2d5986;
+
+}
+
+a:link{
+    color: grey;
+}
+
+a:visited{
+    color: #a22a7a; 
+}
+
+.about-the-author{
+
+    /*background-image: unset;
+    background-color: #8c8cd9;*/
+    margin: 20%;
+
+}
+
+.important-text{
+
+    margin: 0%;
+    padding: 25px;
+    font-size: 125%;
+    background-color: whitesmoke;
+    border-width: 20px;
+    border-style: double;
+    border-color: black;
+    
+
+}
+
+.cover-blurb-section{
+    display: flex;
+    align-content: center;
+    margin: 10%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+figure
+{   
+    justify-content: center;
+    margin: 5%;
+    border-width: 20px;
+    border-style: double;
+    border-color: black;
+}
+
+#author-text,
+.book-info{
+
+    text-align: center;
+    }
+
+#author-text{
+    font-size: 150%
+}
+
+.book-info{
+    padding: 30px;
+    font-size: 100%;
+}
+
+.about-the-book{
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 120%;
+}
+
+#blurb-top{
+    font-variant: small-caps;
+    font-size: 150%;
+    padding: 10px;
+    text-align: center;
+}
+
+#cover{
+    width: 80%;
+    align-content: center;
+}
+
+#chapter-icon{
+    float: left;
+    padding: 20px;
+}
+
+#chapter-one{
+    text-align: center;
+    font-size: 2rem;
+    padding: 25px;
+    margin-top: 5%;
+}
+
+#chapter-text{
+    text-align: left;
+    text-indent: 25px;
+    padding-left: 25px;
+}
+
+#chapter-link{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+
+.flex-container{
+    margin: 10%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card,
+.book-first-chapter {
+    float: none;
+    background-color: whitesmoke;
+    margin: 3%;
+    padding: 20px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  .book-first-chapter{
+      width: 80%;
+      margin: 10%;
+  }
+
+  .card{
+    width: 20%;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  
+
+#clockheader{
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 40px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #clockdiv{
+    
+    height: 50%;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background: #2d5986;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #6193c5;
+    display: inline-block;
+  }
+  
+  #clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #526e8a;
+    display: inline-block;
+  }
+  
+  .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+    color: whitesmoke;
+  }
