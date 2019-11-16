@@ -1,42 +1,42 @@
 html{
-    background-image: url("dragon_rider_by_nick-deligaris-creative-commons-noncommercial.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-color: #8c8cd9;
-}
+    background-color: #01024e;
+    }
 
 body {
     
     font-family: Helvetica;
 }
 
+main{
+    background-image: url("dragon_rider_by_nick-deligaris-creative-commons-noncommercial.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #8c8cd9;
+    padding: 20px;
+
+}
+
 header, footer{
-    text-align: center;
-    
-    color: #a22a7a;
-    
+    text-align: center;   
+    color: #8b4367;
     white-space: wrap;
 }
 
 header{
     font-size: 3rem;
-    text-shadow: 3px 2px #8c8cd9;
     font-variant: small-caps;
 }
 
 footer{
     font-size: 1rem;
-
 }
 
 nav {
     float: center;
-    width: 75%;
+    max-width: 75%;
     border: 5px;
-    border-width: 10px;
-    border-style: double;
-    border-color: black;
+    
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 10px;
@@ -45,29 +45,29 @@ nav {
     margin-right: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
-
     color: black;
     text-align: center;
     font-size: 2rem;
-
-    background-color: #2d5986;
+    background-color: unset;
 
 }
 
-a:link{
-    color: grey;
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 20px;
 }
 
-a:visited{
-    color: #a22a7a; 
+nav a + a{
+    border-left: 3px solid whitesmoke;
 }
+
+/*a:visited{
+    color: grey; 
+} */
 
 .about-the-author{
-
-    /*background-image: unset;
-    background-color: #8c8cd9;*/
-    margin: 20%;
-
+    margin: 10%;
 }
 
 .important-text{
@@ -83,10 +83,16 @@ a:visited{
 
 }
 
+.content{
+    max-width: 1200px;
+    margin: 20px auto 50px;
+    background-color: rgba(255,255,255,0.5);
+}
+
 .cover-blurb-section{
     display: flex;
     align-content: center;
-    margin: 10%;
+    margin: 2% auto 10%;
     background-color: whitesmoke;
     padding: 20px;
     border-radius: 5px;
@@ -96,6 +102,7 @@ figure
 {   
     justify-content: center;
     margin: 5%;
+    padding: 1%;
     border-width: 20px;
     border-style: double;
     border-color: black;
@@ -103,7 +110,6 @@ figure
 
 #author-text,
 .book-info{
-
     text-align: center;
     }
 
@@ -248,3 +254,68 @@ figure
     font-size: 16px;
     color: whitesmoke;
   }
+
+  blockquote {
+    border-radius: 3px;
+    background-color: #ddd;
+    border-left: 5px solid #aaa;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    font-style: italic;
+    position: relative;
+  }
+  
+  blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    font-size: 3em;
+    color: inherit;
+    font-family: cursive;
+  }
+
+  
+  blockquote .author {
+    margin-top: 0.2em;
+    text-align: right;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  blockquote .author::before {
+    content: "‒ ";
+  }
+
+blockquote .author em{
+    display: block;
+    font-size: .8em;
+    margin-top: 4px;
+}
+
+footer{
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    background-color: #2d5986;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.buttons-go-here{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 30px;
+    flex-direction: row;
+}
+
+section.hero{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 20%;
+}
