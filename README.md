@@ -4,7 +4,7 @@
 
 ### Guidelines
 
-![Layout guidelines](./mocks/images/Screenshot 2019-11-17 at 16.19.48.png)
+![Layout guidelines](https://github.com/pablotarga/nci-web-design-project-1/blob/dev/mocks/images/Screenshot%202019-11-17%20at%2016.19.48.png)
 
 All pages have footer with social links, see example page
 
