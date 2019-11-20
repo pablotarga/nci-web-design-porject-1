@@ -38,15 +38,16 @@ body {
 
   margin-top: 25px;
   padding: 32px 45px 42px;
+  border-image: url("../images/interlace-square-small-fade3.png") 31;
+  background-image: url("../images/inter-background.png");
+  border-image-repeat: stretch;
+  background-repeat: no-repeat;
+  background-position: 50% -31px;
+  background-clip: border-box;
+  border-width: 31px;  
 }
 
-.card:first-of-type {
-  
-  background-image: url("../images/castle-flip.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  
-}
+
 
 .card > h1 {
   color: #543864;
