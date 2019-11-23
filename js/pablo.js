@@ -1,21 +1,7 @@
 $(document).ready(function() {
   var debounceScrolling = null;
 
-  $(document).on("scroll", checkScrolling);
-
-  function checkScrolling(e) {
-    if (debounceScrolling) {
-      return;
-    }
-
-    debounceScrolling = true;
-    setTimeout(function() {
-      debounceScrolling = false;
-    }, 50);
-
-    console.log(e);
-    console.log($("html").scrollTop());
-
-    scrollTimer = null;
-  }
+  $(".countdown").each(function(e) {
+    new Countdown(this, "2019-11-23 19:30:00");
+  });
 });
