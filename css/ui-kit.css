@@ -242,3 +242,39 @@ ul.row-list li {
 aside.twitter{
   float: right;
   }
+
+  #quote-card.card{
+    max-width: 250px;
+  }
+
+  blockquote.card-container{
+    margin: 40px auto auto auto;
+  }
+
+  #audio-container.card{
+    max-width: 1400px;
+    min-width: 400px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  #audio-container.card > h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  button.audio {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+
+ 
+
+
+  

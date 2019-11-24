@@ -12,11 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
        
-    <link rel="stylesheet" type="text/css" href="ui-kit.css"> 
+    <link rel="stylesheet" type="text/css" href="css/ui-kit.css"> 
     <link rel="stylesheet" type="text/css" href="bourke-style.css">
     
     <title>
-        Protectors of the North - About the Book
+        Protectors of the North - About the Book - Jane Park
     </title>
 </head>
 <body>
@@ -106,6 +106,8 @@
                 The empire will pursue them to the ends of the earth and beyond. Because Diana isn't just the prophecy's
                 discoverer: she's the only woman alive who knows how to properly read it -- and to whom it refers.
             </p>
+
+            <p id="blurb-bottom"> <em>Scroll down for a sneak peek at the first chapter!</em></p>
             
             <p id="publication-info"><em>Protectors of the North</em> || ShutUp Books || March 2020 || ISBN 000-00000-00000</p>
             <p id="publication-info">Cover art by Nick Deligaris</p>
@@ -153,10 +155,10 @@
 
 <div class="flex-container">
     
-    <div class="card">
+    <div class="card" id="quote-card">
         <img src="imageplaceholder.png" alt="PW" style="width:50%">
         <div class="container">
-            <blockquote>
+            <blockquote class="card-container">
                 "It's absolutely bonkers."
                 <span class="author">Publishers Weekly</span>
             </blockquote>
@@ -165,10 +167,10 @@
         
     </div>
 
-    <div class="card">
+    <div class="card" id="quote-card">
         <img src="imageplaceholder.png" alt="Kirkus" style="width:50%">
             <div class="container">
-                <blockquote>
+                <blockquote class="card-container">
                     "What the hell was the author smoking? Because <em>I want some.</em>"
                     <span class="author">Kirkus</span>
                 </blockquote>
@@ -177,10 +179,10 @@
     
         </div>
         
-        <div class="card">
+        <div class="card" id="quote-card">
             <img src="imageplaceholder.png" alt="Library Journal" style="width:50%">
         <div class="container">
-            <blockquote>
+            <blockquote class="card-container">
             "Don't compare this to <em>A Song of Ice and Fire</em>. George R.R. Martin might sue."
             <span class="author">Library Journal</span>
             </blockquote>
@@ -188,10 +190,10 @@
         
     </div>
     
-    <div class="card">
+    <div class="card" id="quote-card">
         <img src="imageplaceholder.png" alt="Booklist" style="width:50%">
         <div class="container">
-            <blockquote>
+            <blockquote class="card-container">
             "Did Jane Park ever encounter a cliché she didn't want to clasp in a lusty embrace?"
             <span class="author">Booklist</span>
         </blockquote>
@@ -199,10 +201,10 @@
         
     </div>
     
-    <div class="card">
+    <div class="card" id="quote-card">
         <img src="imageplaceholder.png" alt="Njal Thurgrimarsson" style="width:50%">
         <div class="container">
-            <blockquote>
+            <blockquote class="card-container">
                 "Park has an amazing talent. <em>Protectors of the North</em> left me breathless and astounded... Read it!""
                 <span class="author"> Njal Thurgrimarsson <em>author of <strong>The Ever-Burning Eye of Argon</strong></em></span>
             </blockquote>
@@ -210,16 +212,42 @@
         
     </div>
     
-    <div class="card">
+    <div class="card" id="quote-card">
         <img src="imageplaceholder.png" alt="Liz Bourke" style="width:50%">
         <div class="container">
-            <blockquote>
-                "This is a joke."
-                <span class="author"> Liz Bourke, Hugo-nominated reviewer</em></span>
+            <blockquote class="card-container">
+                "This is a joke. I mean, come <em>on</em>, guys. Assassin-Bob is a joke. And Diana is basically Wonder Woman."
+                <span class="author"> Liz Bourke, Hugo-nominated reviewer</span>
             </blockquote>
         </div> 
     </div>
 </div>
+
+
+<div class="card" id="audio-container">
+    <h2>Click on the buttons below to listen to clips of the audiobook from Jane's podcast, <strong><a href="#">Radio Jane!</a></strong></h2>
+    <div class="audio-buttons-container">
+    <audio id="jane-episode-one">
+            <source src="jane-podcast-bourke.mp3"/>
+        </audio>
+        <audio id="jane-episode-two">
+            <source src="jane-podcast-bob-bourke.mp3"/>
+        </audio>
+        <button class ="audio" id="diana-clip">Diana the Scholar (0:10s)</button>
+        <button class = "audio" id="bob-clip">Assassin-Bob (0:12s)</button>
+    </div>
+    </div>
+
+<div class="card" id="game-container">
+    <h2>Do you want to play a short text-based game based on <em>Protectors of the North</em>?</h2>
+    <button id="game-button">
+        <p>PROTECTORS OF THE NORTH: Will You Save The World?</p>
+        <p>Click here to play. </p>
+    </button>
+
+</div>
+
+
 
 <div id="buttons-go-here">
         <button class="bottom-button"><a
@@ -247,5 +275,7 @@
     <p>Artwork &copy; Nick Deligaris under Creative Commons Noncommercial License.</p>
 </footer>
 <script src="bourke-javascript.js" ></script>
+<script src="bourke-play-audio.js"></script>
+<script src="character-game.js"></script>
 </body>
 </html>
