@@ -1,0 +1,353 @@
+html{
+    background-color: #01024e;
+    }
+
+body {
+    
+    background-image: url(dragon-fade.png);
+}
+
+/*
+main{
+    background-image: url("dragon_rider_by_nick-deligaris-creative-commons-noncommercial.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #8c8cd9;
+    padding: 20px;
+
+}
+
+header, footer{
+    text-align: center;   
+    color: #8b4367;
+    white-space: wrap;
+}
+
+header{
+    font-size: 3rem;
+    font-variant: small-caps;
+}
+*/
+footer{
+    background-image: url(dragon-fade.png);
+}
+
+/*
+nav {
+    float: center;
+    max-width: 75%;
+    border: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    background-color: unset;
+
+}
+ ui-kit.css*/
+
+/*nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+nav a + a{
+    border-left: 3px solid whitesmoke;
+} ui-kit.css*/
+
+/*a:visited{
+    color: grey; 
+} */
+
+.about-the-author{
+    margin: 10%;
+}
+
+.important-text{
+
+    margin: 0%;
+    padding: 25px;
+    font-size: 125%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    
+
+}
+
+.content{
+    max-width: 1200px;
+    margin: 20px auto 50px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.cover-blurb-section{
+    max-width: 1400px;
+    display: block;
+    align-content: center;
+    margin: 2% auto 10%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blurb{
+    display: flex;
+    align-content: center;
+    margin: 2% auto 10%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+figure{   
+    justify-content: center;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+img {
+    border-radius: 5px;
+}
+
+#author-text,
+#publication-info{
+    text-align: center;
+    }
+
+#publication-info{
+    margin-top: 20px;
+}
+
+#author-text{
+    font-size: 150%
+}
+
+.book-info{
+    margin-top: 20px;
+}
+
+.book-info,
+#publication-info,{
+    padding: 10px;
+    margin-left: 0px;
+    font-size: 100%;
+}
+
+.about-the-book{
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 120%;
+}
+
+#blurb-top{
+    font-variant: small-caps;
+    font-size: 150%;
+    padding: 10px;
+    text-align: center;
+}
+
+#cover{
+    width: 80%;
+    align-content: center;
+}
+
+#chapter-icon{
+    float: left;
+    padding: 20px;
+}
+
+#chapter-one{
+    text-align: center;
+    font-size: 2rem;
+    padding: 25px;
+    margin-top: 5%;
+}
+
+#chapter-text{
+    text-align: left;
+    text-indent: 25px;
+    padding-left: 25px;
+}
+
+#chapter-link{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+
+.flex-container{
+    margin: 10%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card,
+.book-first-chapter {
+    float: none;
+    background-color: whitesmoke;
+    margin: 3%;
+    padding: 20px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  .book-first-chapter{
+      width: 80%;
+      margin: auto;
+      background-image: url(dragon-fade.png);
+      padding: 50px;
+  }
+
+  .info-container{
+      background-color: whitesmoke;
+      padding: 20px;
+  }
+
+  /*.card{
+    width: 20%;
+  } */
+
+  /* On mouse-over, add a deeper shadow 
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  } */
+  
+  
+  
+   
+
+  
+
+#clockheader{
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 40px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #clockdiv{
+    
+    height: 50%;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background: #2d5986;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #6193c5;
+    display: inline-block;
+  }
+  
+  #clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #526e8a;
+    display: inline-block;
+  }
+  
+  .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+    color: whitesmoke;
+  }
+
+   /*
+  blockquote {
+   border-radius: 3px;
+    background-color: #ddd;
+    border-left: 5px solid #aaa;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    font-style: italic;
+    position: relative; ui-kit.css
+  }*/
+  
+  /*blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    font-size: 3em;
+    color: inherit;
+    font-family: cursive; 
+    -ui-kit.css
+  }
+*/
+  
+  /*blockquote .author {
+      ui-kit.css
+    }
+  
+  blockquote .author::before {
+    ui-kit.css
+    }*/
+
+blockquote .author em{
+    display: block;
+    font-size: .8em;
+    margin-top: 4px;
+}
+
+
+footer{
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    background-color: #01024e;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size:1rem;
+    text-align: end;
+} 
+
+#buttons-go-here{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    padding: 30px;
+    margin: auto;
+    flex-direction: row;
+}
+
+section.hero{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 20%;
+    margin: 30px;
+    padding: 20px;
+}
+
