@@ -66,16 +66,30 @@ header,
 footer {
   text-align: center;
   white-space: wrap;
-  color: whitesmoke;
+  
 }
 
 header {
   font-size: 3rem;
   font-variant: small-caps;
+  
 }
 
 header h1 {
   margin-top: 0;
+}
+
+footer {
+  margin: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 30px;
+  background-color: #01024e;
+  border-radius: 3px;
+  color: whitesmoke;
+  font-size:1rem;
+  text-align: end;
+  background-image: url("/images/dragon-fade.png");
 }
 
 blockquote {
@@ -190,6 +204,15 @@ button + button {
   margin-left: 10px;
 }
 
+.bottom-button{
+  display: flex;
+  align-content: space-between;
+  margin: auto;
+  padding: 30px;
+}
+
+
+
 ul.row-list {
   margin: 0;
   list-style: none;
@@ -215,3 +238,7 @@ ul.row-list li {
 .col-80-20 > * {
   flex: 1;
 }
+
+aside.twitter{
+  float: right;
+  }
