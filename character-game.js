@@ -1,3 +1,9 @@
+/* text game
+
+principal author @Liz Bourke
+*/
+
+
 var playGame = document.getElementById("game-button");
 
 
@@ -42,19 +48,20 @@ else if (yesNo == false){
 if (personID==1 || personID ==2){
   alert("Hello," + person +"! You may choose a weapon to carry on your quest.")
   weapon = prompt("What weapon do you take with you? 1: a sword; 2: a spear; 3: your doctoral thesis; 4: a jar of strong coffee.")
-    if (prompt == 1 || prompt == 2){
+    if (weapon == 1 || weapon == 2){
       alert("Have fun storming the castle!")
       alert("Goodbye now! The game is over.")
     }
-    else if(prompt==3){
-      alert("You toiled long and hard in the dark reaches of Moria to understand the mysteries of the flame. You could not bring yourself to leave the results of your research behind.");
+    else if (weapon == 3){
+      alert("You toiled long and hard in the dark reaches of Moria to understand the mysteries of the flame.")
+      alert("You could not bring yourself to leave the results of your research behind.");
       alert("Goodbye now! The game is over.");
     }
-  else if (prompt==4){
-    alert("If you never sleep again, the demons won't be able to eat your soul.")
+  else if (weapon == 4){
+    alert("If you never sleep again, the demons won't be able to eat your soul.");
     alert("Goodbye now! The game is over.")
   }
-  else{
+  else {
     alert("Wiser still is the one without weapons. As the koan says, \"Not the wind, not the flag: mind is moving.\"")
     alert("Goodbye now. The game is over.")
   }
