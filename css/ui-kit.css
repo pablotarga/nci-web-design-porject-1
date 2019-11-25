@@ -8,24 +8,18 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url("../images/dragon-fade.png");
+  background-image: url("/images/dragon-fade.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-
-
 /* text-colors */
 .text-primary {
-  color: #0F1108;
+  color: #2e384d;
 }
 .text-disabled {
   color: #aaa;
-}
-.read-more {
-  color: #ff6464;
-  font-style: italic;
 }
 
 .container {
@@ -37,24 +31,16 @@ body {
 .card {
   border: 1px solid #ccc;
   border-radius: 3px;
-  background-color: #EAF4D3; 
+
+  background-color: white;
+
   box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
 
   margin-top: 25px;
   padding: 32px 45px 42px;
-  border-image: url("../images/interlace-square-small-fade4.png") 31;
-  background-image: url("../images/inter-background4.png");
-  border-image-repeat: stretch;
-  background-repeat: no-repeat;
-  background-position: 50% -31px;
-  background-clip: border-box;
-  border-width: 31px;  
 }
 
-
-
 .card > h1 {
-  color: #543864;
   font-size: 1.5em;
   margin: 0;
   padding: 0;
@@ -80,16 +66,30 @@ header,
 footer {
   text-align: center;
   white-space: wrap;
-  color: #FBF5F3;
+  
 }
 
 header {
   font-size: 3rem;
   font-variant: small-caps;
+  
 }
 
 header h1 {
   margin-top: 0;
+}
+
+footer {
+  margin: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 30px;
+  background-color: #01024e;
+  border-radius: 3px;
+  color: whitesmoke;
+  font-size:1rem;
+  text-align: end;
+  background-image: url("/images/dragon-fade.png");
 }
 
 blockquote {
@@ -124,13 +124,13 @@ blockquote .author::before {
 }
 
 nav {
-  background: rgb(251, 245, 243);
+  background: rgb(233, 233, 233);
   background: linear-gradient(
     90deg,
-    rgba(234, 244, 211, 0) 10%,
-    rgba(234, 244, 211, 1) 20%,
-    rgba(234, 244, 211, 1) 80%,
-    rgba(234, 244, 211, 0) 90%
+    rgba(233, 233, 233, 0) 10%,
+    rgba(233, 233, 233, 1) 20%,
+    rgba(233, 233, 233, 1) 80%,
+    rgba(233, 233, 233, 0) 90%
   );
 
   padding: 10px 5px;
@@ -204,6 +204,15 @@ button + button {
   margin-left: 10px;
 }
 
+.bottom-button{
+  display: flex;
+  align-content: space-between;
+  margin: auto;
+  padding: 30px;
+}
+
+
+
 ul.row-list {
   margin: 0;
   list-style: none;
@@ -229,3 +238,43 @@ ul.row-list li {
 .col-80-20 > * {
   flex: 1;
 }
+
+aside.twitter{
+  float: right;
+  }
+
+  #quote-card.card{
+    max-width: 250px;
+  }
+
+  blockquote.card-container{
+    margin: 40px auto auto auto;
+  }
+
+  #audio-container.card{
+    max-width: 1400px;
+    min-width: 400px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  #audio-container.card > h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  button.audio {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+
+ 
+
+
+  
