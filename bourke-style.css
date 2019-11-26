@@ -67,6 +67,8 @@ nav a + a{
     color: grey; 
 } */
 
+@media screen and (min-width: 600px) {
+
 .about-the-author {
   margin: 10%;
 }
@@ -223,51 +225,6 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   } */
 
-#clockheader {
-  color: whitesmoke;
-  font-weight: 100;
-  font-size: 40px;
-  padding: 15px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-
-#clockdiv {
-  height: 50%;
-  border-radius: 3px;
-  padding: 10px;
-  text-align: center;
-  background: #2d5986;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-family: sans-serif;
-  color: #fff;
-  display: inline-block;
-  font-weight: 100;
-  text-align: center;
-  font-size: 30px;
-}
-
-#clockdiv > div {
-  padding: 10px;
-  border-radius: 3px;
-  background: #6193c5;
-  display: inline-block;
-}
-
-#clockdiv div > span {
-  padding: 15px;
-  border-radius: 3px;
-  background: #526e8a;
-  display: inline-block;
-}
-
-.smalltext {
-  padding-top: 5px;
-  font-size: 16px;
-  color: whitesmoke;
-}
-
 /*
   blockquote {
    border-radius: 3px;
@@ -375,22 +332,169 @@ section.hero {
 
 }
 
+}
 
-@media screen and (max-width: 481px){
+@media screen and (max-width: 600px){
+#cover{
+  display: block;
+  align-content: center;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 5px;
+}
 
-    .blurb, .book-cover, .about-the-book, .flex-container, .card, button.bottom-button, .book-first-chapter, .cover-blurb-section{
-        float: left;
-    }
+.cover-blurb-section {
+  display: block;
+  align-content: center;
+  margin: .5%;
+  background-color: #01024e;
+  padding: .5%;
+  border-radius: 5px; 
+}
 
-    .about-the-book{
-        max-width: 400px;
-    }
+.blurb, .book-first-chapter {
+  display: block;
+  align-content: center;
+  margin: 2% auto 10%;
+  background-color: #6193c5;
+  padding: 20px;
+  border-radius: 5px;
+}
 
-    #buttons-go-here, #audio-container{
-        float: left;    
-    }
+.about-the-book, .info-container{
+  display: block;
+  align-content: center;
+  margin: .5%;
+  background-color: whitesmoke;
+  padding: 2%;
+  border-radius: 5px; 
+}
+
+#chapter-icon {
+  max-width: 100%;;
+  max-height: 100%;
+  float: left;
+  padding: 20px;
+}
 
 
 
-  
+#chapter-one {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 25px;
+  margin-top: 5%;
+}
+
+#chapter-text {
+  text-align: left;
+  font-size: 1rem;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#chapter-link {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+#blurb-top {
+  font-variant: small-caps;
+  font-size: 150%;
+  padding: 10px;
+  text-align: center;
+}
+
+#blurb-bottom {
+  text-align: center;
+  padding: 20px;
+}
+
+#publication-info {
+  padding: 10px;
+  margin-left: 0px;
+  font-size: 100%;
+}
+
+#audio-container.card{
+  background-color: #6193c5;
+  margin: 2%;
+  padding: 1%;
+}
+
+.quote-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+}
+
+.flex-container, .game-container{
+  margin: 2%;
+  padding: 2%;
+}
+
+#buttons-go-here{
+  margin: 5%;
+  padding: 2%;
+}
+
+.bottom-button{
+  align-content: center;
+  margin: 5%;
+}
+
+}
+
+#clockheader {
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 30px;
+  font-variant: small-caps;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#clockdiv {
+  display: block;
+  height: 50%;
+  margin: 5%;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  background: #2d5986;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-family: sans-serif;
+  color: #fff;
+  /*display: inline-block;*/
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #6193c5;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #526e8a;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+#mobile-link{
+  text-decoration: none;
+  color: #2e384d;
 }

@@ -12,7 +12,15 @@ var playGame = document.getElementById("game-button");
 
 function goToGame(){
 
+swal("Are you sure you want to do this?", {
+    buttons: ["Oh noez!", "Aww yiss!"],
+  });
+  
+
 var yesNo = confirm("Do you want to play a game?");
+
+
+
 var person;
 var personID;
 var weapon;
