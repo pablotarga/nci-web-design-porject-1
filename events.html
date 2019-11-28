@@ -9,8 +9,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
     />
-    <link rel="stylesheet" href="css/ui-kit.css" />
-    <link rel="stylesheet" href="css/events.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/ui-kit.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/events.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/pikaday.css" />
   </head>
   <body>
     <header>
@@ -29,8 +33,7 @@
       <div class="events-container">
         <section class="card">
           <form>
-            <input type="number" value="1" placeholder="1" max="8" min="1" id="regen-iterations"></input>
-            <input type="button" value="Regenerate" id="regen-button"></input>
+            <input type="text" maxlength="10" value="2019-11-04" name="date-input" id="datepicker"></input>
           </form>
           <!--Gonna replace this with a dummy element to be filled with generated HTML, JS can be linked any
           where as it'll be window.onload>-->
@@ -44,5 +47,6 @@
   </body>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/pikaday.js"></script>
   <script src="js/kevin.js"></script>
 </html>
