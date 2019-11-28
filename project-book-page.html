@@ -21,7 +21,7 @@
 </head>
 <body>
 <header>
-     <h1>Jane Park - Author</h1>
+     <h1>Jane Park</h1>
 
     <nav>
         <a href="#">Home</a> 
@@ -57,7 +57,7 @@
 <section class="hero">
     <div id="clockdiv">
 
-        <h1 id="clockheader">Publication Day</h1>
+        <h1 id="clockheader">Countdown to Publication Day</h1>
 
         <div>
             <span class="days"></span>
@@ -119,6 +119,7 @@
             <!-- build this like a card, but a slightly different card-->
             <img id="chapter-icon" src="Celtic-knot-insquare.png" alt="placeholder" style="width:10%">
             <div class="container">
+            <a id="mobile-link" href="#">
             <div class="info-container">
     
                 <h3 id="chapter-one">Chapter One: Diana</h3>
@@ -143,6 +144,7 @@
                     <a href="#">Click HERE</a> to continue reading the first chapter!
                 </p>
             </div>
+            </a>
         </div>
     
         </div>
@@ -225,7 +227,9 @@
 
 
 <div class="card" id="audio-container">
-    <h2>Click on the buttons below to listen to clips of the audiobook from Jane's podcast, <strong><a href="#">Radio Jane!</a></strong></h2>
+    <div class="card">
+        <h2>Click on the buttons below to listen to clips of the audiobook from Jane's podcast, <strong><a href="#">Radio Jane!</a></strong></h2>
+    
     <div class="audio-buttons-container">
     <audio id="jane-episode-one">
             <source src="jane-podcast-bourke.mp3"/>
@@ -237,6 +241,7 @@
         <button class = "audio" id="bob-clip">Assassin-Bob (0:12s)</button>
     </div>
     </div>
+</div>
 
 <div class="card" id="game-container">
     <h2>Do you want to play a short text-based game based on <em>Protectors of the North</em>?</h2>
@@ -274,6 +279,7 @@
     Copyright &copy;Jane Park
     <p>Artwork &copy; Nick Deligaris under Creative Commons Noncommercial License.</p>
 </footer>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="bourke-javascript.js" ></script>
 <script src="bourke-play-audio.js"></script>
 <script src="character-game.js"></script>
