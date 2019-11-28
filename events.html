@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Events</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Events</title>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lato&display=swap" 
+  />
 
-    <link rel="stylesheet" type="text/css" href="css/ui-kit.css" />
+  <link rel="stylesheet" type="text/css" href="css/ui-kit.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/events.css" />
+  <link rel="stylesheet" type="text/css" href="css/events.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/pikaday.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Jane Park</h1>
-      <nav>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#" class="active">Link 4</a>
-        <a href="#">Link 5</a>
-      </nav>
-    </header>
+  <link rel="stylesheet" type="text/css" href="css/pikaday.css" />
+</head>
+<body>
+  <header>
+    <h1>Jane Park</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project-book-page.html">Book</a>
+      <a href="project-author-page.html">Author</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="#">Previous Work</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <div class="container">
+  <div class="container">
 
-      <div class="events-container">
-        <section class="card">
-          <form>
-            <input type="text" maxlength="10" value="2019-11-04" name="date-input" id="datepicker"></input>
-          </form>
-          <!--Gonna replace this with a dummy element to be filled with generated HTML, JS can be linked any
+    <div class="events-container">
+      <section class="card">
+        <form>
+          <input type="text" maxlength="10" value="2019-11-04" name="date-input" id="datepicker"></input>
+        </form>
+        <!--Gonna replace this with a dummy element to be filled with generated HTML, JS can be linked any
           where as it'll be window.onload>-->
-          <ul class="event-list" id="events-html">
+        <ul class="event-list" id="events-html">
 
-            </ul>
-        </div>
-      </div>
-
+        </ul>
     </div>
-  </body>
+  </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="js/pikaday.js"></script>
-  <script src="js/kevin.js"></script>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/pikaday.js"></script>
+<script src="js/kevin.js"></script>
 </html>
