@@ -14,22 +14,87 @@ body {
   background-size: contain;
 }
 
+/* reset box-sizing on all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* GRID SYSTEM */
+.row{
+  display: flex;
+  margin-left: -12px;
+  margin-right: -12px;
+  flex-wrap: wrap;
+}
+
+.col-10,.col-20,.col-30,.col-40,.col-50,.col-60,.col-70,.col-80,.col-90,.col-100,
+.col-md-10,.col-md-20,.col-md-30,.col-md-40,.col-md-50,.col-md-60,.col-md-70,.col-md-80,.col-md-90,.col-md-100
+{
+  padding-right: 12px;
+  padding-left: 12px;
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.col-10{ flex-basis: 10%; max-width: 10%; }
+.col-20{ flex-basis: 20%; max-width: 20%; }
+.col-30{ flex-basis: 30%; max-width: 30%; }
+.col-40{ flex-basis: 40%; max-width: 40%; }
+.col-50{ flex-basis: 50%; max-width: 50%; }
+.col-60{ flex-basis: 60%; max-width: 60%; }
+.col-70{ flex-basis: 70%; max-width: 70%; }
+.col-80{ flex-basis: 80%; max-width: 80%; }
+.col-90{ flex-basis: 90%; max-width: 90%; }
+.col-100{ flex-basis: 100%; max-width: 100%; }
+
+@media(min-width: 768px){
+  .col-md-10{ flex-basis: 10%; max-width: 10%; }
+  .col-md-20{ flex-basis: 20%; max-width: 20%; }
+  .col-md-30{ flex-basis: 30%; max-width: 30%; }
+  .col-md-40{ flex-basis: 40%; max-width: 40%; }
+  .col-md-50{ flex-basis: 50%; max-width: 50%; }
+  .col-md-60{ flex-basis: 60%; max-width: 60%; }
+  .col-md-70{ flex-basis: 70%; max-width: 70%; }
+  .col-md-80{ flex-basis: 80%; max-width: 80%; }
+  .col-md-90{ flex-basis: 90%; max-width: 90%; }
+  .col-md-100{ flex-basis: 100%; max-width: 100%; }
+}
+/* END OF GRID SYSTEM *
+
 /* text-colors */
 .text-primary {
   color: #0F1108;
 }
+
 .text-disabled {
   color: #aaa;
 }
+
 .read-more {
   color: #ff6464;
   font-style: italic;
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container { max-width: 500px; }
+}
+
+@media (min-width: 768px) {
+  .container{ max-width: 600px; }
+}
+
+@media (min-width: 992px) {
+  .container{ max-width: 800px; }
+}
+@media (min-width: 1200px) {
+  .container{ max-width: 1000px; }
 }
 
 .card {
@@ -38,7 +103,7 @@ body {
   background-color: #EAF4D3;
   box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
 
-  margin-top: 25px;
+  margin-top: 24px;
   padding: 32px 45px 42px;
   border-image: url("../images/interlace-square-small-fade4.png") 31;
   background-image: url("../images/inter-background4.png");
@@ -47,6 +112,11 @@ body {
   background-position: 50% -31px;
   background-clip: border-box;
   border-width: 31px;
+}
+
+.card.h-100{
+  /* 24px margin-top */
+  height: calc(100% - 24px);
 }
 
 .card > h1 {

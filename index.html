@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-    />
-    <link rel="stylesheet" href="./vendor/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="./css/ui-kit.css" />
-    <link rel="stylesheet" href="./css/pablo.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Jane Park</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Previous Works</a>
-        <a href="#">News</a>
-        <a href="#">Press</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
 
-    <section class="hero">
-      <div class="countdown">
-        <h1 style="text-align: center;">
-          <span class="countdown-days"></span>d
-          <span class="countdown-hours"></span>h&nbsp;
-          <span class="countdown-minutes"></span>m&nbsp;
-          <span class="countdown-seconds"></span>s
-        </h1>
+  <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
+  <link rel="stylesheet" href="./vendor/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="./css/ui-kit.css" />
+  <link rel="stylesheet" href="./css/pablo.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Jane Park</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Previous Works</a>
+      <a href="#">News</a>
+      <a href="#">Press</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-30">
+        <section class="card h-100">
+          <div class="countdown">
+            <h1 style="text-align: center;">
+              <span class="countdown-days"></span>d
+              <span class="countdown-hours"></span>h&nbsp;
+              <span class="countdown-minutes"></span>m&nbsp;
+              <span class="countdown-seconds"></span>s
+            </h1>
+          </div>
+        </section>
       </div>
+      <div class="col-70">
+        <section class="card h-100">
+          <h1>Jane Park</h1>
+          <h2>The Autor</h2>
+        </section>
+      </div>
+    </div>
 
-      <a href="#champion-1" class="link-next">
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </section>
-    <section id="champion-1">
-      <a href="#champion-2" class="link-next">
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </section>
-    <section id="champion-2"></section>
 
-    <script src="./vendor/jquery-3.4.1.min.js"></script>
-    <script src="./js/countdown.js"></script>
-    <script src="./js/pablo.js"></script>
-  </body>
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-50">
+        <section class="card" id="champion-1">
+          Diana
+        </section>
+      </div>
+      <div class="col-50">
+        <section class="card" id="champion-2">
+          Bob
+        </section>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="./vendor/jquery-3.4.1.min.js"></script>
+  <script src="./js/countdown.js"></script>
+  <script src="./js/pablo.js"></script>
+</body>
+
 </html>
