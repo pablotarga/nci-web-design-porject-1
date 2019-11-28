@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-image: url(/images/dragon-fade.png);
+  background-image: url("/images/dragon-fade.png");
 }
 
 /*
@@ -29,7 +29,7 @@ header{
 }
 */
 footer {
-  background-image: url(/images/dragon-fade.png);
+  background-image: url("/images/dragon-fade.png");
 }
 
 /*
