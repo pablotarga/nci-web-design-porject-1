@@ -35,7 +35,7 @@ body {
 .card {
   border: 1px solid #ccc;
   border-radius: 3px;
-  background-color: #EAF4D3; 
+  background-color: #EAF4D3;
   box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
 
   margin-top: 25px;
@@ -46,7 +46,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% -31px;
   background-clip: border-box;
-  border-width: 31px;  
+  border-width: 31px;
 }
 
 .card > h1 {
@@ -82,7 +82,7 @@ footer {
 header {
   font-size: 3rem;
   font-variant: small-caps;
-  
+
 }
 
 header h1 {
@@ -177,7 +177,7 @@ nav a:hover {
   border-left: 3px solid #ff6464;
 } */
 
-button {
+button.btn {
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
@@ -283,8 +283,3 @@ aside.twitter{
     margin-bottom: 20px;
     margin-left: 40px;
   }
-
- 
-
-
-  
