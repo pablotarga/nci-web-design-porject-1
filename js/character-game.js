@@ -5,6 +5,7 @@ principal author @Liz Bourke
 
 
 var playGame = document.getElementById("game-button");
+console.log("Play,", playGame);
 
 
 
