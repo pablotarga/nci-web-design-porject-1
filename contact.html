@@ -52,24 +52,31 @@
 </section>
     
 <section class="card">
-    <form>
+    <form action="#" method="POST">
         <h1>Contact Jane:</h1>
         <label for="name"> Name:
-            <input type="text" value="Name" id="name" required class="form-control">
+            <input type="text" value="Your Name" id="name" required class="form-control">
         </label>
 
         <label for="email"> Email:
-            <input type="email" value="myemail@email.org" id="email" required class="form-control">
+            <input type="email" value="Your Email" id="email" required class="form-control">
+        </label>
+        <label>
+            Message Subject:
+            <select class="form-control">
+                <option>Fan Mail</option>
+                <option>Request a Review Copy</option>
+                <option>School Visit</option>
+                <option>Other</option>
+            </select>
         </label>
 
         <label>Your Message:
-            <textarea row="4" cols="50" maxlength="1000" autofocus required class="form-control">
-                Please enter your message here:
-            </textarea>
+            <textarea row="4" cols="50" maxlength="1000" autofocus required class="form-control" placeholder="Please enter your message here:"></textarea>
         </label>
         
         
-        <input type="submit" value="Submit Message" required class="form-control">
+        <input class="btn" type="submit" value="Submit Message" required>
         
     </form>
 </section>
