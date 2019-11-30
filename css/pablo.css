@@ -39,3 +39,8 @@ section .link-next {
   display: block;
   margin: 0 auto 20px;
 }
+
+#champion-1 img, #champion-2 img{
+  max-width: 100%;
+  width: 100%;
+}
