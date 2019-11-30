@@ -16,6 +16,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/ui-kit.css" > <!-- ui kit link goes here-->
         <link rel="stylesheet" type="text/css" href="css/bourke-style.css">
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome/css/all.css">
 
     <title>
         Jane Park - About the Author
@@ -36,7 +37,7 @@
 
         <a href="#">Previous Work</a>
 
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
 
     </nav>
 
@@ -45,20 +46,21 @@
 
 <main>
 
-<section class="hero"><div id="clockdiv">
-
-    <h1 id="clockheader">Countdown to Publication Day</h1>
-
-    <div>
-        <span class="days"></span>
-        <div class="smalltext">Days</div>
+<section class="card h-100">
+    <div class="countdown">
+        <h1 style="text-align: center;">
+            Countdown to Publication Day!
+            <br><hr>
+            <span class="countdown-days"></span>d
+            <span class="countdown-hours"></span>h&nbsp;
+            <span class="countdown-minutes"></span>m&nbsp;
+            <span class="countdown-seconds"></span>s
+        </h1>
     </div>
-    <div>
-        <span class="hours"></span>
-        <div class="smalltext">Hours</div>
-    </div>
-</div>
 </section>
+
+            
+
 
 
 
@@ -112,7 +114,9 @@
         <a href="https://www.instagram.com/locusmagazine/?hl=en"><i class="fab fa-instagram fa-3x"> </i></a>
     </section>
 </footer>
-<script src="js/bourke-javascript.js" ></script>
-<script src="https://kit.fontawesome.com/db9dfb0b8c.js" crossorigin="anonymous"></script>
+
+<script src="./js/countdown.js"></script>
+<script src="./js/pablo.js"></script>
+
 </body>
 </html>
