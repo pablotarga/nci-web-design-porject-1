@@ -307,7 +307,7 @@ nav a:hover {
   border-left: 3px solid #ff6464;
 } */
 
-button.btn {
+.btn {
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
@@ -322,25 +322,25 @@ button.btn {
   background-color: cornflowerblue;
 }
 
-button[disabled] {
+.btn[disabled] {
   opacity: 0.3;
   pointer-events: none;
 }
 
-button:hover {
+.btn:hover {
   background-color: blue;
 }
 
-button.secondary {
+.btn.secondary {
   border-color: red;
   background-color: tomato;
 }
 
-button.secondary:hover {
+.btn.secondary:hover {
   background-color: red;
 }
 
-button + button {
+.btn + .btn {
   margin-left: 10px;
 }
 
