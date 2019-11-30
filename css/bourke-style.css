@@ -2,9 +2,9 @@ html {
   background-color: #01024e;
 }
 
-body {
-  background-image: url("/images/dragon-fade.png");
-}
+/*body {
+  background-image: url("../images/dragon-fade.png");
+}*/
 
 /*
 main{
@@ -28,9 +28,9 @@ header{
     font-variant: small-caps;
 }
 */
-footer {
-  background-image: url("/images/dragon-fade.png");
-}
+/*footer {
+  background-image: url("../images/dragon-fade.png");
+}*/
 
 /*
 nav {
@@ -172,7 +172,7 @@ img {
   margin-top: 5%;
 }
 
-#chapter-text {
+.chapter-text {
   text-align: left;
   text-indent: 25px;
   padding-left: 25px;
@@ -262,7 +262,7 @@ blockquote .author em {
   margin-top: 4px;
 }
 
-footer {
+/*footer {
   margin: 2%;
   margin-left: 10%;
   margin-right: 10%;
@@ -272,7 +272,7 @@ footer {
   color: whitesmoke;
   font-size: 1rem;
   text-align: end;
-}
+} */
 
 #buttons-go-here {
   display: flex;
@@ -417,17 +417,12 @@ section.hero {
   font-size: 100%;
 }
 
-#audio-container.card{
+.audio-container.card{
   background-color: #6193c5;
   margin: 2%;
   padding: 1%;
 }
 
-.quote-card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px; 
-}
 
 .flex-container, .game-container{
   margin: 2%;
