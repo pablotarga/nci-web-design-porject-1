@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+
+main{
+  min-height: calc(100vh - 391px);
+}
+
+section.page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+section.hero {
+  min-height: calc(100vh - 200px);
+}
+section.hero .countdown {
+  /* color: #fff; */
+  font-size: 20px;
+  align-self: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+section.hero .countdown h1 {
+  font-size: 80px;
+}
+
+section .link-next {
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto 20px;
+}
