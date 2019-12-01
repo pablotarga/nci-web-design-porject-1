@@ -1,0 +1,25 @@
+Book:
+A banner for the book. The book is the most important element: it's the thing to sell.
+                    <em><strong>PROTECTORS OF THE NORTH</strong></em>
+                    <br>
+                    <br> an epic fantasy novel in the style of Brandon Sanderson and Mercedes Lackey!
+                </p>
+                <p>
+                    He's a fiendish coffee-fuelled assassin who must take medication to keep him sane. She's a hard-bitten
+                    motormouth college professor from a secret island of warrior women. Together, they fight dragons!
+                </p>
+                Link to book page with this element.
+                Link to Amazon.
+
+Author:
+Small-icon of author picture.
+Jane Park.
+
+The HEROES of PROTECTORS OF THE NORTH
+    Assassin-Bob
+    placeholder-image (find a CCA jpg from deviant-art)
+    <p>Bob is an assassin from an ancient order, skilled in many weapons. But demons - both metaphorical and actual - pursue him, and he relies on caffeine to keep himself sane.</p>
+
+    Diana the Scholar
+    placeholder-image(find a CCA jpg from deviant-art)
+    <p>Diana comes from an isolated island of warrior women learned in both warfare and arcane arts. She's one of the few human scholars in the Draconic Empire - and she's discovered a prophecy that foretells the empire's downfall. </p>
