@@ -102,9 +102,7 @@ nav a + a{
   display: flex;
   align-content: center;
   margin: 2% auto 10%;
-  background-color: whitesmoke;
   padding: 20px;
-  border-radius: 5px;
 }
 
 figure {
@@ -192,6 +190,7 @@ img {
   justify-content: center;
 }
 
+/*
 .card,
 .book-first-chapter {
   float: none;
@@ -203,8 +202,9 @@ img {
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
 }
+*/
 
-.book-first-chapter {
+#book-first-chapter {
   width: 80%;
   margin: 10px auto auto auto;
   background-image: url(dragon-fade.png);
@@ -212,7 +212,6 @@ img {
 }
 
 .info-container {
-  background-color: whitesmoke;
   padding: 20px;
 }
 
