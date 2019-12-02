@@ -23,3 +23,9 @@ Use modals for chapter preview and for short story
 Use same layout for author and book pages (photo on one side, etc. see wireframes)
 
 Use same countdown on book page and home page (dramatic, with seconds?)
+
+# IMAGES
+
+source: https://www.deviantart.com/eddy-shinjuku/art/VYRANDiL-World-of-Warcraft-OC-Commission-600284360
+
+source: https://www.deviantart.com/eranthe/art/Scholar-662823982

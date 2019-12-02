@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!-- @author Liz Bourke, Kevin Higgins, Pablo Targa, Cathal Kavanagh for Web Design Project 
+    
+    This is the Contact page
+    
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       
+    <link rel="stylesheet" type="text/css" href="css/ui-kit.css"> 
+    <link rel="stylesheet" type="text/css" href="css/bourke-style.css">
+    <link rel="stylesheet" type="text/css" href="./vendor/fontawesome/css/all.css">
+    
+    <title>
+        Contact - Jane Park
+    </title>
+</head>
+<body>
+<header>
+     <h1>Jane Park</h1>
+
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="project-book-page.html" class="active">Book</a> 
+        <a href="project-author-page.html">Author</a> 
+        <a href="events.html">Events</a> 
+        <a href="#">Previous Work</a> 
+        <a href="contact.html" class="active">Contact</a> 
+    </nav>
+        
+</header>
+
+<main>
+      
+<section class="card h-100">
+    <div class="countdown">
+        <h1 style="text-align: center;">
+            Countdown to Publication Day!
+            <br>
+            <hr>
+            <span class="countdown-days"></span>d
+            <span class="countdown-hours"></span>h&nbsp;
+            <span class="countdown-minutes"></span>m&nbsp;
+            <span class="countdown-seconds"></span>s
+        </h1>
+    </div>
+</section>
+    
+<section class="card">
+    <form action="#" method="POST">
+        <h1>Contact Jane:</h1>
+        <label for="name"> Name:
+            <input type="text" value="Your Name" id="name" required class="form-control">
+        </label>
+
+        <label for="email"> Email:
+            <input type="email" value="Your Email" id="email" required class="form-control">
+        </label>
+        <label>
+            Message Subject:
+            <select class="form-control">
+                <option>Fan Mail</option>
+                <option>Request a Review Copy</option>
+                <option>School Visit</option>
+                <option>Other</option>
+            </select>
+        </label>
+
+        <label>Your Message:
+            <textarea row="4" cols="50" maxlength="1000" autofocus required class="form-control" placeholder="Please enter your message here:"></textarea>
+        </label>
+        
+        
+        <input class="btn" type="submit" value="Submit Message" required id="submit">
+        
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <section class="icons">
+        Copyright &copy;Jane Park
+        <p>Artwork &copy; Nick Deligaris under Creative Commons Noncommercial License.</p>
+    </section>
+    <section class="icons">
+        <a href="https://www.facebook.com/pages/category/Publisher/Locus-Magazine-547211638785273/"><i
+                class="fab fa-facebook-square fa-3x"> </i></a>
+        <a href="https://twitter.com/locusmag"><i class="fab fa-twitter-square fa-3x"> </i></a>
+        <a href="https://www.instagram.com/locusmagazine/?hl=en"><i class="fab fa-instagram fa-3x"> </i></a>
+    </section>
+
+</footer>
+
+<script src="./js/countdown.js"></script>
+<script src="./js/pablo.js"></script>
+<script scr="./js/bourke-mailing-signup.js"></script>
+    
+</body>
+</html>

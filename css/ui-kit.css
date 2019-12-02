@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url("/images/dragon-fade.png");
+  background-image: url("../images/dragon-fade.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,7 +28,8 @@ body {
 }
 
 .col-10,.col-20,.col-30,.col-40,.col-50,.col-60,.col-70,.col-80,.col-90,.col-100,
-.col-md-10,.col-md-20,.col-md-30,.col-md-40,.col-md-50,.col-md-60,.col-md-70,.col-md-80,.col-md-90,.col-md-100
+.col-md-10,.col-md-20,.col-md-30,.col-md-40,.col-md-50,.col-md-60,.col-md-70,.col-md-80,.col-md-90,.col-md-100,
+.col-33, .col-md-33
 {
   padding-right: 12px;
   padding-left: 12px;
@@ -40,6 +41,7 @@ body {
 .col-10{ flex-basis: 10%; max-width: 10%; }
 .col-20{ flex-basis: 20%; max-width: 20%; }
 .col-30{ flex-basis: 30%; max-width: 30%; }
+.col-33{ flex-basis: 33%; max-width: 33%; }
 .col-40{ flex-basis: 40%; max-width: 40%; }
 .col-50{ flex-basis: 50%; max-width: 50%; }
 .col-60{ flex-basis: 60%; max-width: 60%; }
@@ -52,6 +54,7 @@ body {
   .col-md-10{ flex-basis: 10%; max-width: 10%; }
   .col-md-20{ flex-basis: 20%; max-width: 20%; }
   .col-md-30{ flex-basis: 30%; max-width: 30%; }
+  .col-md-33{ flex-basis: 33%; max-width: 33%; }
   .col-md-40{ flex-basis: 40%; max-width: 40%; }
   .col-md-50{ flex-basis: 50%; max-width: 50%; }
   .col-md-60{ flex-basis: 60%; max-width: 60%; }
@@ -99,7 +102,7 @@ body {
 
 .card {
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #FBF5F3;
   box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
 
@@ -114,7 +117,7 @@ body {
   border-width: 31px;
 }
 
-.card.h-100{
+#h-100{
   /* 24px margin-top */
   height: calc(100% - 24px);
 }
@@ -142,6 +145,43 @@ body {
   margin-left: -16px;
 }
 
+/* FORM ELEMENTS */
+label{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top:10px;
+  display: block;
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+  color: #2e384d;
+  background-color: #ddf6ff;
+  border: 1px solid #b4c7ce;
+  border-radius: 5px;
+
+  background-clip: padding-box;
+  padding: 11px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0;
+
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.form-control:focus {
+  border-color: #9aa9ae;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #ddf6ff;
+  background-color: #ffffff;
+}
+
+textarea.form-control{
+  resize: vertical;
+
+}
+
 header,
 footer {
   text-align: center;
@@ -160,16 +200,32 @@ header h1 {
 }
 
 footer {
-  margin: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
+  display: block;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
   padding: 30px;
-  background-color: #01024e;
+  background-color: #8b4367;
   border-radius: 3px;
   color: whitesmoke;
   font-size:1rem;
-  text-align: end;
-  background-image: url("/images/dragon-fade.png");
+  text-align: left;
+}
+
+i.fab{
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.icons{
+  display: inline-block;
+  margin: auto;
+  padding: auto;
+}
+
+.icons + .icons{
+  margin-left: 40%;
 }
 
 blockquote {
@@ -251,7 +307,7 @@ nav a:hover {
   border-left: 3px solid #ff6464;
 } */
 
-button.btn {
+.btn {
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
@@ -266,25 +322,25 @@ button.btn {
   background-color: cornflowerblue;
 }
 
-button[disabled] {
+.btn[disabled] {
   opacity: 0.3;
   pointer-events: none;
 }
 
-button:hover {
+.btn:hover {
   background-color: blue;
 }
 
-button.secondary {
+.btn.secondary {
   border-color: red;
   background-color: tomato;
 }
 
-button.secondary:hover {
+.btn.secondary:hover {
   background-color: red;
 }
 
-button + button {
+.btn + .btn {
   margin-left: 10px;
 }
 
@@ -335,12 +391,20 @@ aside.twitter{
     margin: 40px auto auto auto;
   }
 
+  .card blockquote.card-container{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+
   #audio-container.card{
     max-width: 1400px;
     min-width: 400px;
+    /*
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    */
     text-align: center;
     padding: 20px;
   }
