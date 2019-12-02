@@ -117,7 +117,7 @@ body {
   border-width: 31px;
 }
 
-#h-100{
+.h-100{
   /* 24px margin-top */
   height: calc(100% - 24px);
 }
