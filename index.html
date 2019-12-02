@@ -29,26 +29,49 @@
   </header>
   <main>
     <div class="container">
-      <div class="row">
-        <div class="col-100 col-md-30">
-          <section class="card h-100">
+      <section class="card h-100">
+        <div class="row">
+          <div class="col-100 col-md-30">
+            <div>
+              <img class="responsive" src="images/Protectors-Cover.png" alt="Cover art for PROTECTORS OF THE NORTH by Nick Deligaris">
+              <div class="book-info">
+                <a href="https://www.amazon.com/Tough-Guide-Fantasyland-Essential-Fantasy/dp/0142407224" target="_blank" rel="noopener noreferrer">
+                  <img src="https://www.niftybuttons.com/amazon/amazon-button2.png">
+                </a>
+              </div>
+            </div>
             <div class="countdown">
               <h1 style="text-align: center;">
-                <span class="countdown-days"></span>d
+                <div><span class="countdown-days"></span>d</div>
                 <span class="countdown-hours"></span>h&nbsp;
                 <span class="countdown-minutes"></span>m&nbsp;
                 <span class="countdown-seconds"></span>s
               </h1>
             </div>
-          </section>
+          </div>
+          <div class="col-100 col-md-70">
+
+            <div>
+              <p>
+                <h1>PROTECTORS OF THE NORTH</h1>
+                <br>
+                <br> an epic fantasy novel in the style of Brandon Sanderson and Mercedes Lackey!
+              </p>
+              <p>
+                He's a fiendish coffee-fuelled assassin who must take medication to keep him sane. She's a hard-bitten
+                motormouth college professor from a secret island of warrior women. Together, they fight dragons!
+              </p>
+
+              Link to book page with this element.
+              Link to Amazon.
+
+
+
+
+            </div>
+          </div>
         </div>
-        <div class="col-100 col-md-70">
-          <section class="card h-100">
-            <h1>Jane Park</h1>
-            <h2>The Autor</h2>
-          </section>
-        </div>
-      </div>
+      </section>
 
 
 
@@ -57,25 +80,45 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-50">
+        <div class="col-100 col-md-50">
           <section class="card h-100" id="champion-1">
             <h1>Diana the Scholar</h1>
             <!-- placeholder-image(find a CCA jpg from deviant-art) -->
-            <img src="./images/scholar-diana.png" alt="">
+            <img class="responsive" src="./images/scholar-diana.png" alt="">
             <p>Diana comes from an isolated island of warrior women learned in both warfare and arcane arts. She's one of the few human scholars in the Draconic Empire - and she's discovered a prophecy that foretells the empire's downfall. </p>
           </section>
         </div>
-        <div class="col-50">
+        <div class="col-100 col-md-50">
           <section class="card h-100" id="champion-2">
             <h1>Assassin-Bob</h1>
             <!-- placeholder-image (find a CCA jpg from deviant-art) -->
-            <img src="./images/assassin-bob.png" alt="">
+            <img class="responsive" src="./images/assassin-bob.png" alt="">
             <p>Bob is an assassin from an ancient order, skilled in many weapons. But demons - both metaphorical and actual - pursue him, and he relies on caffeine to keep himself sane.</p>
           </section>
         </div>
       </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-100">
+          <div class="card" id="audio-container">
 
+            <h2>Click on the buttons below to listen to clips of the audiobook from Jane's podcast, <strong><a href="#">Radio Jane!</a></strong></h2>
+
+            <div class="audio-buttons-container">
+              <audio id="jane-episode-one">
+                <source src="audio/jane-podcast-bourke.mp3" />
+              </audio>
+              <audio id="jane-episode-two">
+                <source src="audio/jane-podcast-bob-bourke.mp3" />
+              </audio>
+              <button class="btn audio" id="diana-clip">Diana the Scholar (0:10s)</button>
+              <button class="btn audio" id="bob-clip">Assassin-Bob (0:12s)</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
