@@ -1,4 +1,4 @@
-alert('adam');
+
 
 var displaySignUp = function(event){
     event.preventDefault();

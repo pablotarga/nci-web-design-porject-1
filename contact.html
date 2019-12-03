@@ -24,35 +24,23 @@
 <header>
      <h1>Jane Park</h1>
 
-    <nav>
+    <a name="top"><nav>
         <a href="index.html">Home</a> 
         <a href="project-book-page.html" class="active">Book</a> 
         <a href="project-author-page.html">Author</a> 
         <a href="events.html">Events</a> 
         <a href="#">Previous Work</a> 
         <a href="contact.html" class="active">Contact</a> 
-    </nav>
+    </nav></a>
         
 </header>
 
 <main>
       
-<section class="card h-100">
-    <div class="countdown">
-        <h1 style="text-align: center;">
-            Countdown to Publication Day!
-            <br>
-            <hr>
-            <span class="countdown-days"></span>d
-            <span class="countdown-hours"></span>h&nbsp;
-            <span class="countdown-minutes"></span>m&nbsp;
-            <span class="countdown-seconds"></span>s
-        </h1>
-    </div>
-</section>
+
     
 <section class="card">
-    <form action="#" method="POST">
+    <form action="https://formspree.io/xkngbygr" method="POST" name="contact_form" target="_blank">
         <h1>Contact Jane:</h1>
         <label for="name"> Name:
             <input type="text" value="Your Name" id="name" required class="form-control">
@@ -74,7 +62,18 @@
         <label>Your Message:
             <textarea row="4" cols="50" maxlength="1000" autofocus required class="form-control" placeholder="Please enter your message here:"></textarea>
         </label>
-        
+        <label for="signup">Sign up to Jane's mailing list?
+            <br>
+            <br>
+            <input type="radio" value="Yes" id="signup">
+            Yes
+            <br>
+            
+            <input type="radio" value="No" id="signup">
+            No
+            <br>
+            <br>
+        </label>
         
         <input class="btn" type="submit" value="Submit Message" required id="submit">
         
@@ -87,6 +86,7 @@
     <section class="icons">
         Copyright &copy;Jane Park
         <p>Artwork &copy; Nick Deligaris under Creative Commons Noncommercial License.</p>
+        <a href="#top">Back to top</a>
     </section>
     <section class="icons">
         <a href="https://www.facebook.com/pages/category/Publisher/Locus-Magazine-547211638785273/"><i
@@ -99,7 +99,8 @@
 
 <script src="./js/countdown.js"></script>
 <script src="./js/pablo.js"></script>
-<script scr="./js/bourke-mailing-signup.js"></script>
+
+
     
 </body>
 </html>
