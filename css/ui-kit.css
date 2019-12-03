@@ -421,3 +421,12 @@ aside.twitter{
     margin-bottom: 20px;
     margin-left: 40px;
   }
+
+  p.book-text{
+    padding: 2px;
+    margin: 2px;
+  }
+
+  .blurb-top{
+    font-variant: small-caps;
+  }
