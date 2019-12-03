@@ -185,7 +185,7 @@ textarea.form-control{
 header,
 footer {
   text-align: center;
-  white-space: wrap;
+  white-space: normal; 
   color: #FBF5F3;
 }
 
@@ -221,7 +221,7 @@ i.fab{
 .icons{
   display: inline-block;
   margin: auto;
-  padding: auto;
+  padding: 2%;
 }
 
 .icons + .icons{
