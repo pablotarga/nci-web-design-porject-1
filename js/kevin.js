@@ -2,6 +2,7 @@
 	let listElement = document.getElementById('events-html');
 	let dateWidget = document.getElementById('datepicker');
 	let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January'];
+	let countPostfix = ['st', 'nd', 'rd', 'th']
 	var eventArray = [];
 	$.getJSON('js/data_un.json', function (obj) {
 		eventArray = obj.eventList;
@@ -9,8 +10,8 @@
 
 		//sorting: outer loop moves the *starting point* of the inner loop
 		//which traverses seeking the smallest member, which, if it isn't
-		//there already, is swapped with the *first member of this traversal*
-		//i.e. the member indexed by the outer loop
+		//already the first member of this traversal, is swapped with that member
+		//(i.e. the member indexed by the outer loop)
 
 		for (i = 0; i < eventArray.length; i++) {
 			let earliestDateFound = Date.parse("2100-01-01");
@@ -47,6 +48,17 @@ function buildDatePicker() {
 	var picker = new Pikaday({ field: $('#datepicker')[0], defaultDate: new Date(), setDefaultDate: true });
 }
 
+function postfix(day) {
+
+	while (day > 10) {
+		day = day - 10;
+	}
+	if (day > 4) day = 4;
+	//shift days back by one for zero-indexed array
+	day = day - 1;
+	return countPostfix[day];
+}
+
 function regenerate(e) {
 	let selectedDate = new Date(dateWidget.value);
 	console.log("eventArray.length is: " + eventArray.length);
@@ -59,9 +71,10 @@ function regenerate(e) {
 			textHolder += '<li class="event"><h3>';
 			textHolder += eventArray[i].shortEventLocation;
 			textHolder += '<br>';
+			let dayOfTheMonth = eventDate.getDate();
+			textHolder += (monthsArray[eventDate.getMonth()] + ' ' + dayOfTheMonth + '<sup>' + postfix(dayOfTheMonth));
 
-			textHolder += (eventDate.getDate() + ' ' + monthsArray[eventDate.getMonth()]);
-			textHolder += '</h3><div class="event-poster"><img src="';
+			textHolder += '</sup></h3><div class="event-poster"><img src="';
 			textHolder += eventArray[i].posterURL;
 			textHolder += '" alt="" /></div><h4>';
 			textHolder = textHolder + eventArray[i].eventName;
@@ -69,7 +82,7 @@ function regenerate(e) {
 			textHolder += eventArray[i].longEventLocation;
 			textHolder += '</address><p><a href="';
 			textHolder += eventArray[i].externalEventLink;
-			textHolder += '">Find out more</a></p></li>';
+			textHolder += '" class="read-more">Find out more</a></p></li>';
 			listElement.innerHTML = textHolder;
 		}
 	}

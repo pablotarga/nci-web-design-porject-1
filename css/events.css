@@ -16,6 +16,21 @@
   margin: 0 15px 30px;
 }
 
+#datepicker {
+  text-align: center;
+  display: block;
+  margin: 20px auto 0px;
+}
+
+label.date-form {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top:10px;
+  display: block;
+  text-align:center;
+}
+
 .event {
   width: 250px;
   text-align:center;
