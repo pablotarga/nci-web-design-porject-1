@@ -1,71 +1,11 @@
+@charset "utf-8";
+
+
 html {
   background-color: #01024e;
 }
 
-/*body {
-  background-image: url("../images/dragon-fade.png");
-}*/
 
-/*
-main{
-    background-image: url("dragon_rider_by_nick-deligaris-creative-commons-noncommercial.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-color: #8c8cd9;
-    padding: 20px;
-
-}
-
-header, footer{
-    text-align: center;   
-    color: #8b4367;
-    white-space: wrap;
-}
-
-header{
-    font-size: 3rem;
-    font-variant: small-caps;
-}
-*/
-/*footer {
-  background-image: url("../images/dragon-fade.png");
-}*/
-
-/*
-nav {
-    float: center;
-    max-width: 75%;
-    border: 5px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    color: black;
-    text-align: center;
-    font-size: 2rem;
-    background-color: unset;
-
-}
- ui-kit.css*/
-
-/*nav a{
-    color: whitesmoke;
-    text-decoration: none;
-    padding: 5px 20px;
-}
-
-nav a + a{
-    border-left: 3px solid whitesmoke;
-} ui-kit.css*/
-
-/*a:visited{
-    color: grey; 
-} */
 
 @media screen and (min-width: 600px) {
 
@@ -190,19 +130,7 @@ img {
   justify-content: center;
 }
 
-/*
-.card,
-.book-first-chapter {
-  float: none;
-  background-color: whitesmoke;
-  margin: 3%;
-  padding: 20px;
-  /* Add shadows to create the "card" effect 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners 
-}
-*/
+
 
 #book-first-chapter {
   width: 80%;
@@ -215,45 +143,7 @@ img {
   padding: 20px;
 }
 
-/*.card{
-    width: 20%;
-  } */
 
-/* On mouse-over, add a deeper shadow 
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  } */
-
-/*
-  blockquote {
-   border-radius: 3px;
-    background-color: #ddd;
-    border-left: 5px solid #aaa;
-    margin: 0;
-    padding: 20px 20px 20px 40px;
-    font-style: italic;
-    position: relative; ui-kit.css
-  }*/
-
-/*blockquote::before {
-    content: '"';
-    position: absolute;
-    top: -3px;
-    left: 10px;
-    font-size: 3em;
-    color: inherit;
-    font-family: cursive; 
-    -ui-kit.css
-  }
-*/
-
-/*blockquote .author {
-      ui-kit.css
-    }
-  
-  blockquote .author::before {
-    ui-kit.css
-    }*/
 
 blockquote .author em {
   display: block;
@@ -261,17 +151,7 @@ blockquote .author em {
   margin-top: 4px;
 }
 
-/*footer {
-  margin: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 30px;
-  background-color: #01024e;
-  border-radius: 3px;
-  color: whitesmoke;
-  font-size: 1rem;
-  text-align: end;
-} */
+
 
 #buttons-go-here {
   display: flex;
