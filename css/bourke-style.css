@@ -57,11 +57,11 @@ img {
 }
 
 #author-text,
-#publication-info {
+.publication-info {
   text-align: center;
 }
 
-#publication-info {
+.publication-info {
   margin-top: 20px;
 }
 
@@ -74,7 +74,7 @@ img {
 }
 
 .book-info,
-#publication-info {
+.publication-info {
   padding: 10px;
   margin-left: 0px;
   font-size: 100%;
@@ -290,7 +290,7 @@ section.hero {
   padding: 20px;
 }
 
-#publication-info {
+.publication-info {
   padding: 10px;
   margin-left: 0px;
   font-size: 100%;

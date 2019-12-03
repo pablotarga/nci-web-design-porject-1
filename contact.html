@@ -22,16 +22,16 @@
 </head>
 <body>
 <header>
-     <h1>Jane Park</h1>
+    <a id="top"></a><h1>Jane Park</h1>
 
-    <a name="top"><nav>
+    <nav>
         <a href="index.html">Home</a> 
         <a href="project-book-page.html">Book</a> 
         <a href="project-author-page.html">Author</a> 
         <a href="events.html">Events</a> 
         <a href="Book3.html">Previous Work</a> 
         <a href="contact.html" class="active">Contact</a> 
-    </nav></a>
+    </nav>
         
 </header>
 
@@ -60,23 +60,22 @@
             </label>
 
             <label>Your Message:
-                <textarea row="4" cols="50" maxlength="1000" autofocus required class="form-control"
+                <textarea maxlength="1000" autofocus required class="form-control"
                     placeholder="Please enter your message here:"></textarea>
             </label>
-            <label for="signup">Sign up to Jane's mailing list?
+            <label for="signup-yes">Sign up to Jane's mailing list?</label>
                 <br>
-                <br>
-                <input type="radio" value="Yes" id="signup">
+                <input type="radio" value="Yes" id="signup-yes">
                 Yes
                 <br>
 
-                <input type="radio" value="No" id="signup">
+                <input type="radio" value="No" id="signup-no">
                 No
                 <br>
                 <br>
-            </label>
+            
 
-            <input class="btn" type="submit" value="Submit Message" required id="submit">
+            <input class="btn" type="submit" value="Submit Message" id="submit">
 
         </form>
     </section>
