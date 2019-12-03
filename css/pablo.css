@@ -40,7 +40,11 @@ section .link-next {
   margin: 0 auto 20px;
 }
 
-#champion-1 img, #champion-2 img{
+img.responsive{
   max-width: 100%;
   width: 100%;
+}
+
+.book-info{
+  text-align: center;
 }
