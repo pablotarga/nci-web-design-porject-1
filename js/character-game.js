@@ -29,13 +29,13 @@ if (yesNo === true){
   
   var characterChoice = prompt("You can play as Diana the Scholar [enter 1] or Assassin-Bob [enter 2].");
   
-  if (characterChoice === 1){
+  if (characterChoice === "1"){
   alert("You are the learned scholar Diana, a traveller from a hidden island of warrior women.");
   person = "Diana";
   personID = 1
   risk = 2;
   }
-  else if(characterChoice === 2){
+  else if(characterChoice === "2"){
   alert("You are the brave but ill assassin known only as Assassin-Bob, who relies on caffeine to drive away his personal demons.");
   person = "Assassin-Bob";
   personID = 2
@@ -55,22 +55,22 @@ else if (yesNo === false){
 if (personID===1 || personID ===2){
   alert("Hello," + person +"! You may choose a weapon to carry on your quest.")
   weapon = prompt("What weapon do you take with you? 1: a sword; 2: a spear; 3: your doctoral thesis; 4: a jar of strong coffee.")
-    if (weapon === 1 || weapon === 2){
+    if (weapon === "1" || weapon === "2"){
       alert("Have fun storming the castle!");
-      if (weapon === 1){
+      if (weapon === "1"){
         weapon = " sword "
         risk = risk - 1}
-      else if(weapon === 2){
+      else if(weapon === "2"){
         weapon = " spear "
         risk = risk - 1}
     }
-    else if (weapon === 3){
+    else if (weapon === "3"){
       alert("You toiled long and hard in the dark reaches of Moria to understand the mysteries of the flame.")
       alert("You could not bring yourself to leave the results of your research behind.");
       weapon = " forbidden knowledge "
       risk = risk + 3;
     }
-  else if (weapon === 4){
+  else if (weapon === "4"){
     alert("If you never sleep again, the demons won't be able to eat your soul.");
     weapon = " sovereign remedy against sleep "
     risk = risk +1;
