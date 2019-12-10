@@ -264,13 +264,13 @@ blockquote .author::before {
 }
 
 nav {
-  //margin-bottom: 6vh;
+  margin-bottom: 72px;
   background: rgb(251, 245, 243);
   background: linear-gradient(
     90deg,
     rgba(251, 245, 243, 0) 10%,
-    rgba(251, 245, 243, 1) 20%,
-    rgba(251, 245, 243, 1) 80%,
+    rgba(251, 245, 243, .95) 20%,
+    rgba(251, 245, 243, .95) 80%,
     rgba(251, 245, 243, 0) 90%
   );
 
