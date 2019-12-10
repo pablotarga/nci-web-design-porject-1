@@ -41,7 +41,7 @@ html {
 .blurb {
   display: flex;
   align-content: center;
-  margin: 2% auto;
+  margin: 24px auto;
   padding: 20px;
 }
 

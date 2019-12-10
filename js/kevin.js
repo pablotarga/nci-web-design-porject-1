@@ -74,9 +74,11 @@ function regenerate(e) {
 			let dayOfTheMonth = eventDate.getDate();
 			textHolder += (monthsArray[eventDate.getMonth()] + ' ' + dayOfTheMonth + '<sup>' + postfix(dayOfTheMonth));
 
-			textHolder += '</sup></h3><div class="event-poster"><img src="';
+			textHolder += '</sup></h3><div class="event-poster"><a href ="';
+			textHolder += eventArray[i].externalEventLink;
+			textHolder += '"><img src="';
 			textHolder += eventArray[i].posterURL;
-			textHolder += '" alt="" /></div><h4>';
+			textHolder += '" alt="" /></a></div><h4>';
 			textHolder = textHolder + eventArray[i].eventName;
 			textHolder += '</h4><address>';
 			textHolder += eventArray[i].longEventLocation;

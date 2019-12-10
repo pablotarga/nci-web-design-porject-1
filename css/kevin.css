@@ -93,7 +93,7 @@ label.date-form {
   padding-bottom: 100%;
  }
  
- .event-poster > img {
+ .event-poster > a > img {
   padding: 0px;
   position: absolute;
   left: 0%;
