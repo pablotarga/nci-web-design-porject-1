@@ -41,7 +41,7 @@ html {
 .blurb {
   display: flex;
   align-content: center;
-  margin: 2% auto 10%;
+  margin: 2% auto;
   padding: 20px;
 }
 
@@ -134,8 +134,8 @@ img {
 
 #book-first-chapter {
   width: 80%;
-  margin: 10px auto auto auto;
-  background-image: url(dragon-fade.png);
+  margin: 24px auto auto auto;
+  //background-image: url(../images/dragon-fade.png);
   padding: 50px;
 }
 
