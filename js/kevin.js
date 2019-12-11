@@ -63,22 +63,66 @@ function regenerate(e) {
 	let selectedDate = new Date(dateWidget.value);
 	console.log("eventArray.length is: " + eventArray.length);
 	var textHolder = '';
+
+	var list = document.querySelector('ul');
+	var listItem = document.createElement('li');
+	listItem.class = 'event';
+
+	var lineBreak = document.createElement('br');
 	for (i = 0; i < eventArray.length; i++) {
+
 		let eventDate = new Date(eventArray[i].eventDate);
 		console.log(eventDate.getTime());
 		console.log(selectedDate.getTime());
+
 		if (selectedDate.getTime() <= eventDate.getTime()) {
+			var newListItem = listItem;
+			var placeHeader = document.createElement('h3');
+			placeHeader.innerText = eventArray[i].shortEventLocation;
+			var dateHeader = document.createElement('h3');
+			dateHeader.innerText = monthsArray[eventDate.getMonth()];
+			var figure = document.createElement('figure');
+
+			figure.class = "event-poster";
+			figure.appendChild(document.createElement("a"));
+			var link = figure.querySelector('a');
+			link.href = eventArray[i].externalEventLink;
+			link.appendChild(document.createElement('img'));
+			var poster = link.querySelector('img');
+			poster.src = eventArray[i].posterURL;
+			poster.alt = "Event poster";
+			var nameHeader = document.createElement('h4');
+
+			/*
+			var superscript = document.createElement('sup');
+			var address = document.createElement('address');
+			var readMore = document.querySelector('a');
+			*/
+			placeHeader.innerText += 'Place test';
+			dateHeader.innerText += 'Date test';
+			newListItem.appendChild(placeHeader);
+
+			newListItem.appendChild(dateHeader);
+			newListItem.appendChild(figure);
+			/*
+			newListItem.appendChild(figure);
+			newListItem.appendChild(nameHeader);
+			newListItem.appendChild(address);
+			newListItem.appendChild(readMore);
+			*/
+			list.appendChild(newListItem);
+			/*
 			textHolder += '<li class="event"><h3>';
 			textHolder += eventArray[i].shortEventLocation;
 			textHolder += '<br>';
 			let dayOfTheMonth = eventDate.getDate();
 			textHolder += (monthsArray[eventDate.getMonth()] + ' ' + dayOfTheMonth + '<sup>' + postfix(dayOfTheMonth));
 
-			textHolder += '</sup></h3><div class="event-poster"><a href ="';
+			textHolder += '</sup></h3><figure class="event-poster"><a href ="';
 			textHolder += eventArray[i].externalEventLink;
 			textHolder += '"><img src="';
 			textHolder += eventArray[i].posterURL;
-			textHolder += '" alt="" /></a></div><h4>';
+			textHolder += '" alt="" /></a></figure><h4>';
 			textHolder = textHolder + eventArray[i].eventName;
 			textHolder += '</h4><address>';
 			textHolder += eventArray[i].longEventLocation;
@@ -86,6 +130,9 @@ function regenerate(e) {
 			textHolder += eventArray[i].externalEventLink;
 			textHolder += '" class="read-more">Find out more</a></p></li>';
 			listElement.innerHTML = textHolder;
+			*/
+
 		}
+
 	}
 }
