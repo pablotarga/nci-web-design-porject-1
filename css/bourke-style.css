@@ -47,7 +47,7 @@ html {
 
 figure {
   justify-content: center;
-  margin: 5%;
+  margin: 0px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -135,7 +135,7 @@ img {
 #book-first-chapter {
   width: 80%;
   margin: 24px auto auto auto;
-  //background-image: url(../images/dragon-fade.png);
+  /* background-image: url(../images/dragon-fade.png); once I fixed the path so the image displaeyd, text was illegible so commented out - Kevin */ 
   padding: 50px;
 }
 
@@ -202,12 +202,12 @@ section.hero {
 }
 
 #game-button{
-    background-color: #ff0000;
+    //taken out so that it takes secondary btn colour from palette... background-color: #ff0000;
     margin-left: 22%;
     margin-right: 22%;
     margin-top: auto;
     max-width: 50%;
-    padding: .5%;
+    padding: 10px;
 
 }
 

@@ -117,6 +117,11 @@ body {
   border-width: 31px;
 }
 
+.card .card {
+  border-image: url("../images/interlace-square-small-fade5.png") 31;
+  background-image: none;
+}
+
 .h-100{
   /* 24px margin-top */
   height: calc(100% - 24px);
