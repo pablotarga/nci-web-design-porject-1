@@ -50,3 +50,34 @@ img.responsive{
   text-align: center;
   margin-top: 20px;
 }
+
+.book-info-index{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.book-info-index a{
+  margin-top: 20px;
+}
+#marketplace-amazon     { order: 2; }
+#marketplace-indiebound { order: 1;}
+#marketplace-apple      { order: 3; }
+
+@media (min-width: 768px){
+  .book-info-index{
+    margin-top: 20px;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .book-info-index a{
+    margin-top: 0;
+  }
+
+  #marketplace-amazon     { order: 1; }
+  #marketplace-indiebound { order: 2;}
+  #marketplace-apple      { order: 3; }
+
+}

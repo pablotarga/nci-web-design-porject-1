@@ -201,17 +201,7 @@ section.hero {
     padding: 1%;
 }
 
-#game-button{
-    //taken out so that it takes secondary btn colour from palette... background-color: #ff0000;
-    margin-left: 22%;
-    margin-right: 22%;
-    margin-top: auto;
-    max-width: 50%;
-    padding: 10px;
 
-}
-
-}
 
 @media screen and (max-width: 600px){
 #cover{
@@ -385,4 +375,5 @@ section.hero {
 
 #signup-no {
   margin-bottom: 16px;
+}
 }

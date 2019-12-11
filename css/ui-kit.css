@@ -237,8 +237,7 @@ i.fab{
   display: block;
 }
 
-.icons + .icons{
-}
+
 
 blockquote {
   border-radius: 3px;
@@ -422,7 +421,7 @@ aside.twitter{
     margin-right: auto;
     */
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
   #audio-container.card > h2{
     font-size: 1.5rem;
@@ -431,12 +430,21 @@ aside.twitter{
   }
 
   button.audio {
+    min-width: 210px;
     font-size: 1rem;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
   }
+
+  button.audio + button.audio{
+    margin-left: 0;
+  }
+  @media (min-width: 768px){
+    button.audio + button.audio{
+    margin-left: 20px;
+  }
+  
 
   p.book-text{
     padding: 2px;
@@ -445,4 +453,4 @@ aside.twitter{
 
   .blurb-top{
     font-variant: small-caps;
-  }
+  }}
