@@ -1,11 +1,19 @@
 <!DOCTYPE html>
+
+<!-- @author Liz Bourke, Kevin Higgins, Pablo Targa, Cathal Kavanagh for Web Design Project
+
+    This is the Home page.
+    Primary author Pablo Targa.
+
+-->
+
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
+  <title>Home - Jane Park</title>
 
   <link
         rel="stylesheet"
@@ -17,38 +25,66 @@
 
 <body>
   <header>
+    <a id="top"></a>
     <h1>Jane Park</h1>
     <nav>
       <a href="index.html" class="active">Home</a>
       <a href="project-book-page.html">Book</a>
       <a href="project-author-page.html">Author</a>
       <a href="events.html">Events</a>
-      <a href="#">Previous Work</a>
+      <a href="Book3.html">Previous Work</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
     <div class="container">
-      <div class="row">
-        <div class="col-30">
-          <section class="card h-100">
+      <section class="card h-100">
+        <div class="row">
+          <div class="col-100 col-md-30">
+            <div>
+              <img class="responsive" src="images/Protectors-Cover.png" alt="Cover art for PROTECTORS OF THE NORTH by Nick Deligaris. A knight riding a dragon.">
+            </div>
+          </div>
+          <div class="col-100 col-md-70">
+            <div>
+              <h1 class="blurb-top" style="text-align: center;">Protectors of the North</h1>
+              <br>
+              <br>
+              <p class="blurb-top">an epic fantasy novel in the style of Brandon Sanderson and Mercedes Lackey!</p>
+              <p class="book-text">
+                He's a fiendish coffee-fuelled assassin who must take medication to keep him sane. She's a hard-bitten
+                motormouth college professor from a secret island of warrior women. Together, they fight dragons!
+              </p>
+
+              <p>For more information, <a href="project-book-page.html">click here!</a></p>
+            </div>
+          </div>
+
+          <div class="col-100">
+            <div class="book-info-index">
+              <a id="marketplace-amazon" href="https://www.amazon.com/Tough-Guide-Fantasyland-Essential-Fantasy/dp/0142407224" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.niftybuttons.com/amazon/amazon-button2.png" alt="Amazon Button">
+              </a>
+
+              <a id="marketplace-indiebound" href="https://www.indiebound.org/book/9781590216767">
+                <img src="https://www.indiebound.org/files/indiebound/images/banners/logo.png" alt="Support Independent Bookstores - Visit IndieBound.org" style="max-height: 100px; max-width: 150px">
+              </a>
+
+              <a id="marketplace-apple" href="https://books.apple.com/us/book/daughter-of-mystery/id1090015924?mt=11&app=itunes" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-gb/badge-lrg.svg?releaseDate=2014-01-14T00:00:00Z&kind=epubbook&bubble=books) no-repeat;width:141px;height:40px;"></a>
+            </div>
             <div class="countdown">
               <h1 style="text-align: center;">
-                <span class="countdown-days"></span>d
+                Countdown to Publication Day:
+                <div><span class="countdown-days"></span>d</div>
                 <span class="countdown-hours"></span>h&nbsp;
                 <span class="countdown-minutes"></span>m&nbsp;
                 <span class="countdown-seconds"></span>s
               </h1>
             </div>
-          </section>
+
+          </div>
         </div>
-        <div class="col-70">
-          <section class="card h-100">
-            <h1>Jane Park</h1>
-            <h2>The Autor</h2>
-          </section>
-        </div>
-      </div>
+      </section>
 
 
 
@@ -57,34 +93,63 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-50">
-          <section class="card" id="champion-1">
-            Diana
+        <div class="col-100 col-md-50">
+          <section class="card h-100" id="champion-1">
+            <h1>Diana the Scholar</h1>
+            <!-- placeholder-image(find a CCA jpg from deviant-art) -->
+            <img class="responsive" src="./images/scholar-diana.png" alt="Manga art of a sumptuously robed and jewelled girl with an elaborate hat.">
+            <p>Diana comes from an isolated island of warrior women learned in both warfare and arcane arts. She's one of the few human scholars in the Draconic Empire - and she's discovered a prophecy that foretells the empire's downfall. </p>
           </section>
         </div>
-        <div class="col-50">
-          <section class="card" id="champion-2">
-            Bob
+        <div class="col-100 col-md-50">
+          <section class="card h-100" id="champion-2">
+            <h1>Assassin-Bob</h1>
+            <!-- placeholder-image (find a CCA jpg from deviant-art) -->
+            <img class="responsive" src="./images/assassin-bob.png" alt="Digital rendering of a dark knight with spiky elfin ears in fantasy armour, holding flames in one hand.">
+            <p>Bob is an assassin from an ancient order, skilled in many weapons. But demons - both metaphorical and actual - pursue him, and he relies on caffeine to keep himself sane.</p>
           </section>
         </div>
       </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-100">
+          <div class="card" id="audio-container">
 
+            <h2>Click on the buttons below to listen to clips of the audiobook from Jane's podcast, <strong><a href="#">Radio Jane!</a></strong></h2>
+
+            <div class="audio-buttons-container">
+              <audio id="jane-episode-one">
+                <source src="audio/jane-podcast-bourke.mp3" />
+              </audio>
+              <audio id="jane-episode-two">
+                <source src="audio/jane-podcast-bob-bourke.mp3" />
+              </audio>
+              <button class="btn audio" id="diana-clip">Diana the Scholar (0:10s)</button>
+              <button class="btn audio" id="bob-clip">Assassin-Bob (0:12s)</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
   <footer>
-    <section class="icons">
-      Copyright &copy;Jane Park
+    <section>
+      <p>Copyright &copy;Jane Park</p>
       <p>Artwork &copy; Nick Deligaris under Creative Commons Noncommercial License.</p>
+      <a href="#top">Back to top</a>
     </section>
     <section class="icons">
-      <a href="https://www.facebook.com/pages/category/Publisher/Locus-Magazine-547211638785273/"><i class="fab fa-facebook-square fa-3x"></i></a>
-      <a href="https://twitter.com/locusmag"><i class="fab fa-twitter-square fa-3x"></i></a>
-      <a href="https://www.instagram.com/locusmagazine/?hl=en"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="https://www.facebook.com/pages/category/Publisher/Locus-Magazine-547211638785273/"><i
+           class="fab fa-facebook-square fa-3x"> </i></a>
+      <a href="https://twitter.com/locusmag"><i class="fab fa-twitter-square fa-3x"> </i></a>
+      <a href="https://www.instagram.com/locusmagazine/?hl=en"><i class="fab fa-instagram fa-3x"> </i></a>
     </section>
   </footer>
 
+  <script src="./js/bourke-play-audio.js"></script>
   <script src="./vendor/jquery-3.4.1.min.js"></script>
   <script src="./js/countdown.js"></script>
   <script src="./js/pablo.js"></script>
