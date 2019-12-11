@@ -67,7 +67,8 @@ function regenerate(e) {
 	var list = document.querySelector('ul');
 
 
-	var lineBreak = document.createElement('br');
+
+
 	for (i = 0; i < eventArray.length; i++) {
 
 		let eventDate = new Date(eventArray[i].eventDate);
@@ -92,16 +93,26 @@ function regenerate(e) {
 			poster.src = eventArray[i].posterURL;
 			poster.alt = "Event poster";
 			var nameHeader = document.createElement('h4');
+			nameHeader.innerText = eventArray[i].eventName;
 
+			var address = document.createElement('address');
+			address.innerText = eventArray[i].longEventLocation;
+
+			var readMore = document.createElement('a');
+			readMore.href = eventArray[i].externalEventLink;
+			readMore.innerText = "Read More...";
+			readMore.classList.add("read-more");
 			/*
 			var superscript = document.createElement('sup');
-			var address = document.createElement('address');
 			var readMore = document.querySelector('a');
 			*/
 			newListItem.appendChild(placeHeader);
 
 			newListItem.appendChild(dateHeader);
 			newListItem.appendChild(figure);
+			newListItem.appendChild(nameHeader);
+			newListItem.appendChild(address);
+			newListItem.appendChild(readMore);
 			/*
 			newListItem.appendChild(figure);
 			newListItem.appendChild(nameHeader);
