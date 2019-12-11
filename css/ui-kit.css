@@ -191,7 +191,7 @@ textarea.form-control{
 header,
 footer {
   text-align: center;
-  white-space: normal; 
+  white-space: normal;
   color: #FBF5F3;
 }
 
@@ -378,7 +378,7 @@ ul.row-list {
 }
 
 ul.row-list li {
-  flex-basis: 250px;
+  flex-basis: 40%;
   flex-grow: 1;
   flex-shrink: 0;
   margin-bottom: 30px;
@@ -395,62 +395,82 @@ ul.row-list li {
 }
 
 aside.twitter{
-  float: right;
-  }
+float: right;
+}
 
-  #quote-card.card{
-    max-width: 250px;
-  }
+#quote-card.card{
+  max-width: 250px;
+}
 
-  blockquote.card-container{
-    margin: 40px auto auto auto;
-  }
+blockquote.card-container{
+  margin: 40px auto auto auto;
+}
 
-  .card blockquote.card-container{
-    margin-left: -10px;
-    margin-right: -10px;
-  }
+.card blockquote.card-container{
+  margin-left: -10px;
+  margin-right: -10px;
+}
 
 
-  #audio-container.card{
-    max-width: 1400px;
-    min-width: 400px;
-    /*
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    */
-    text-align: center;
-    padding: 10px;
-  }
-  #audio-container.card > h2{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+#audio-container.card{
+  max-width: 1400px;
+  min-width: 400px;
+  /*
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  */
+  text-align: center;
+  padding: 10px;
+}
+#audio-container.card > h2{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  button.audio {
-    min-width: 210px;
-    font-size: 1rem;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+button.audio {
+  min-width: 210px;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+button.audio + button.audio{
+  margin-left: 0;
+}
+
+@media (min-width: 768px){
   button.audio + button.audio{
-    margin-left: 0;
-  }
-  @media (min-width: 768px){
-    button.audio + button.audio{
     margin-left: 20px;
   }
-  
+}
 
-  p.book-text{
-    padding: 2px;
-    margin: 2px;
-  }
+p.book-text{
+  padding: 2px;
+  margin: 2px;
+}
 
-  .blurb-top{
-    font-variant: small-caps;
-  }}
+.blurb-top{
+  font-variant: small-caps;
+}
+
+img.responsive{
+  max-width: 100%;
+}
+
+.w-100{ width: 100% }
+.w-75{ width: 75% }
+.w-50{ width: 50% }
+.w-25{ width: 25% }
+
+.mw-200{ max-width: 200px; }
+
+.blurb-top{
+  font-variant: small-caps;
+}
+
+.text-center{
+  text-align: center;
+}
