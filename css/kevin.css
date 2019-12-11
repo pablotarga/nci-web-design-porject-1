@@ -31,17 +31,18 @@ width: 100%;
 
 #events-html li {
   width: 300px;
+  max-width: 400px;
   flex-basis: auto;
-  flex-grow: 0;
+  flex-grow: 1;
   flex-shrink: 0;
   margin-bottom: 30px;
-  margin: 0 15px 30px;
+  margin: 34px 24px;
 }
 
 #datepicker {
   text-align: center;
   display: block;
-  margin: 20px auto 0px;
+  margin: 20px auto 10px;
 }
 
 label.date-form {
@@ -56,6 +57,19 @@ label.date-form {
 .event {
   width: 250px;
   text-align:center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #FBF5F3;
+  box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
+
+  margin 0px 0px 0px;
+  border-image: url("../images/interlace-square-small-fade5.png") 31;
+  background-image: none;
+  border-image-repeat: stretch;
+  background-repeat: no-repeat;
+  background-position: 50% -31px;
+  background-clip: border-box;
+  border-width: 31px;
 }
 
 .event::after {
