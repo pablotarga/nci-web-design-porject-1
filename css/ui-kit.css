@@ -470,3 +470,7 @@ img.responsive{
 .blurb-top{
   font-variant: small-caps;
 }
+
+.text-center{
+  text-align: center;
+}
