@@ -6,7 +6,7 @@
 		"shortEventLocation": "Brooklyn, New York",
 		"eventDate": "2019-09-16",
 		"externalEventLink": "https://brooklynbookfestival.org/",
-		"posterURL": "images/poster-brooklyn.png"
+		"posterURL": "images/poster-cym.png"
 	},
 	{
 		"eventName": "RVA Booklovers Festival",
@@ -14,7 +14,7 @@
 		"shortEventLocation": "Richmond, Virginia",
 		"eventDate": "2019-10-19",
 		"externalEventLink": "https://www.rvabookloversfestival.com/2019-festival.html/",
-		"posterURL": "images/poster-rva.png"
+		"posterURL": "images/poster-cym.png"
 	},
 	{
 		"eventName": "WRITEOUT Festival",
@@ -22,7 +22,7 @@
 		"shortEventLocation": "County Wicklow, Ireland",
 		"eventDate": "2019-11-30",
 		"externalEventLink": "https://cfcp.ie/",
-		"posterURL": "images/poster-write.png"
+		"posterURL": "images/poster-cym.png"
 	},
 	{
 		"eventName": "Speculative Authors Booth, Salt Lake FanX",
@@ -30,7 +30,7 @@
 		"shortEventLocation": "Salt Lake, Utah",
 		"eventDate": "2019-12-03",
 		"externalEventLink": "https://fanxsaltlake.com/",
-		"posterURL": "images/poster-fanx.png"
+		"posterURL": "images/poster-cym.png"
 	},
 	{
 		"eventName": "Akumakon 2020",
@@ -38,7 +38,7 @@
 		"shortEventLocation": "Galway, Ireland",
 		"eventDate": "2020-01-18",
 		"externalEventLink": "https://www.akumakon.com/",
-		"posterURL": "images/poster-akuma.png"
+		"posterURL": "images/poster-cym.png"
 	},
 	{
 		"eventName": "Jaipur Literature Festival",

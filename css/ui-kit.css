@@ -31,8 +31,8 @@ body {
 .col-md-10,.col-md-20,.col-md-30,.col-md-40,.col-md-50,.col-md-60,.col-md-70,.col-md-80,.col-md-90,.col-md-100,
 .col-33, .col-md-33
 {
-  padding-right: 14px;
-  padding-left: 14px;
+  padding-right: 12px;
+  padding-left: 12px;
   width: 100%;
   flex-shrink: 0;
   flex-grow: 0;
@@ -106,7 +106,7 @@ body {
   background-color: #FBF5F3;
   box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
 
-  margin-top:28px;
+  margin-top: 24px;
   padding: 32px 45px 42px;
   border-image: url("../images/interlace-square-small-fade4.png") 31;
   background-image: url("../images/inter-background4.png");
@@ -117,12 +117,7 @@ body {
   border-width: 31px;
 }
 
-.card .card {
-  border-image: url("../images/interlace-square-small-fade5.png") 31;
-  background-image: none;
-}
-
-.h-100{
+.card.h-100{
   /* 24px margin-top */
   height: calc(100% - 24px);
 }
@@ -152,7 +147,6 @@ body {
 
 /* FORM ELEMENTS */
 label{
-  line-height: 2.6;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -164,8 +158,8 @@ label{
   display: block;
   width: 100%;
   color: #2e384d;
-  background-color: #dddddd;
-  border: 1px solid #01024e;
+  background-color: #ddf6ff;
+  border: 1px solid #b4c7ce;
   border-radius: 5px;
 
   background-clip: padding-box;
@@ -177,10 +171,10 @@ label{
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .form-control:focus {
-  border-color: #8b4367;
+  border-color: #9aa9ae;
   outline: 0;
-  box-shadow: 0 0 3px 0.04rem #8b4367;
-  background-color: #fbf5f3;
+  box-shadow: 0 0 0 0.2rem #ddf6ff;
+  background-color: #ffffff;
 }
 
 textarea.form-control{
@@ -191,7 +185,7 @@ textarea.form-control{
 header,
 footer {
   text-align: center;
-  white-space: normal; 
+  white-space: wrap;
   color: #FBF5F3;
 }
 
@@ -199,22 +193,19 @@ header {
   font-size: 3rem;
   font-variant: small-caps;
 
-
 }
 
 header h1 {
   margin-top: 0;
-  margin-bottom: 53px;
-  text-shadow: 0px 0px 10px rgba(1, 2, 78, .5);
 }
 
 footer {
   display: block;
-  margin-top: 28px;
+  margin-top: 20px;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  padding: 30px 30px 0px 30px;
+  padding: 30px;
   background-color: #8b4367;
   border-radius: 3px;
   color: whitesmoke;
@@ -228,16 +219,14 @@ i.fab{
 }
 
 .icons{
-  display: block;
-  text-align: center;
-  padding: 0% 2% 2% 2%;
+  display: inline-block;
+  margin: auto;
+  padding: auto;
 }
 
-.footer-text {
-  display: block;
+.icons + .icons{
+  margin-left: 40%;
 }
-
-
 
 blockquote {
   border-radius: 3px;
@@ -271,13 +260,12 @@ blockquote .author::before {
 }
 
 nav {
-  margin-bottom: 72px;
   background: rgb(251, 245, 243);
   background: linear-gradient(
     90deg,
     rgba(251, 245, 243, 0) 10%,
-    rgba(251, 245, 243, .95) 20%,
-    rgba(251, 245, 243, .95) 80%,
+    rgba(251, 245, 243, 1) 20%,
+    rgba(251, 245, 243, 1) 80%,
     rgba(251, 245, 243, 0) 90%
   );
 
@@ -330,8 +318,8 @@ nav a:hover {
 
   /* colors */
   color: white;
-  border-color: #8b4367;
-  background-color: #ff6464;
+  border-color: blue;
+  background-color: cornflowerblue;
 }
 
 .btn[disabled] {
@@ -344,8 +332,8 @@ nav a:hover {
 }
 
 .btn.secondary {
-  border-color: #01024e;
-  background-color: #8b4367;
+  border-color: red;
+  background-color: tomato;
 }
 
 .btn.secondary:hover {
@@ -363,17 +351,14 @@ nav a:hover {
   padding: 30px;
 }
 
-figure.card {
-  margin: auto;
-}
+
 
 ul.row-list {
-  margin: 0px;
+  margin: 0;
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   justify-content: space-between;
 }
 
@@ -415,13 +400,11 @@ aside.twitter{
   #audio-container.card{
     max-width: 1400px;
     min-width: 400px;
-    /*
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    */
     text-align: center;
-    padding: 10px;
+    padding: 20px;
   }
   #audio-container.card > h2{
     font-size: 1.5rem;
@@ -430,27 +413,9 @@ aside.twitter{
   }
 
   button.audio {
-    min-width: 210px;
     font-size: 1rem;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  button.audio + button.audio{
-    margin-left: 0;
-  }
-  @media (min-width: 768px){
-    button.audio + button.audio{
-    margin-left: 20px;
-  }
-  
-
-  p.book-text{
-    padding: 2px;
-    margin: 2px;
-  }
-
-  .blurb-top{
-    font-variant: small-caps;
+    margin-left: 40px;
   }

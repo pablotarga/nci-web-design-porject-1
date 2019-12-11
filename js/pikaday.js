@@ -1120,7 +1120,7 @@
                 top = top - height - field.offsetHeight;
                 bottomAligned = false;
             }
-			left = left - (field.offsetWidth / 4);
+
             this.el.style.left = left + 'px';
             this.el.style.top = top + 'px';
 
