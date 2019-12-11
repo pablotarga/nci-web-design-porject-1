@@ -41,7 +41,7 @@ html {
 .blurb {
   display: flex;
   align-content: center;
-  margin: 24px auto;
+  margin: 28px auto;
   padding: 20px;
 }
 
@@ -134,7 +134,7 @@ img {
 
 #book-first-chapter {
   width: 80%;
-  margin: 24px auto auto auto;
+  margin: 28px auto auto auto;
   /* background-image: url(../images/dragon-fade.png); once I fixed the path so the image displaeyd, text was illegible so commented out - Kevin */ 
   padding: 50px;
 }
@@ -377,4 +377,12 @@ section.hero {
 #mobile-friend{
   max-width: 90%;
   max-height: 90%;
+}
+
+#signup-yes {
+  margin-bottom: 16px;
+}
+
+#signup-no {
+  margin-bottom: 16px;
 }
