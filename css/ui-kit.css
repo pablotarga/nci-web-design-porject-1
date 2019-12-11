@@ -466,3 +466,7 @@ img.responsive{
 .w-25{ width: 25% }
 
 .mw-200{ max-width: 200px; }
+
+.blurb-top{
+  font-variant: small-caps;
+}
