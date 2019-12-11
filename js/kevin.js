@@ -65,8 +65,7 @@ function regenerate(e) {
 	var textHolder = '';
 
 	var list = document.querySelector('ul');
-	var listItem = document.createElement('li');
-	listItem.class = 'event';
+
 
 	var lineBreak = document.createElement('br');
 	for (i = 0; i < eventArray.length; i++) {
@@ -76,14 +75,15 @@ function regenerate(e) {
 		console.log(selectedDate.getTime());
 
 		if (selectedDate.getTime() <= eventDate.getTime()) {
-			var newListItem = listItem;
+			var newListItem = document.createElement('li');
+			newListItem.class = 'event';
 			var placeHeader = document.createElement('h3');
 			placeHeader.innerText = eventArray[i].shortEventLocation;
 			var dateHeader = document.createElement('h3');
 			dateHeader.innerText = monthsArray[eventDate.getMonth()];
 			var figure = document.createElement('figure');
 
-			figure.class = "event-poster";
+			figure.classList.add("event-poster");
 			figure.appendChild(document.createElement("a"));
 			var link = figure.querySelector('a');
 			link.href = eventArray[i].externalEventLink;
@@ -98,8 +98,6 @@ function regenerate(e) {
 			var address = document.createElement('address');
 			var readMore = document.querySelector('a');
 			*/
-			placeHeader.innerText += 'Place test';
-			dateHeader.innerText += 'Date test';
 			newListItem.appendChild(placeHeader);
 
 			newListItem.appendChild(dateHeader);

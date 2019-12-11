@@ -29,7 +29,7 @@ width: 100%;
   justify-content: space-around;
 }
 
-#events-html li {
+#events-html > li {
   width: 300px;
   max-width: 400px;
   flex-basis: auto;
