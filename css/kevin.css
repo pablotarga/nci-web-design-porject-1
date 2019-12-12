@@ -115,10 +115,11 @@ label.date-form {
   top: -20%;
  }
  .event > h2 {
- margin: 0px 0px 16px 0px;
+ 
+  margin: 18.7px 0px 18.7px 0px;
  }
  .event > h3 {
-  margin: 37px 0px 18.7px 0px;
+  margin: 18.7px 0px 0px 0px;
  }
  .event > address {
   height: 4em;
