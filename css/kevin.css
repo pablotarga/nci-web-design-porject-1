@@ -1,0 +1,126 @@
+.press-quotes {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.press-quotes blockquote {
+  width: 300px;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+  margin: 0 15px 30px;
+}
+
+.press-quotes > h2 {
+width: 100%;
+}
+
+#events-html {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#events-html li {
+  width: 300px;
+  max-width: 400px;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+  margin: 34px 24px;
+}
+
+#datepicker {
+  text-align: center;
+  display: block;
+  margin: 20px auto 10px;
+}
+
+label.date-form {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top:10px;
+  display: block;
+  text-align:center;
+}
+
+.event {
+  width: 250px;
+  text-align:center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #FBF5F3;
+  box-shadow: rgba(46, 91, 255, 0.07) 0 10px 20px 0;
+
+  margin 0px 0px 0px;
+  border-image: url("../images/interlace-square-small-fade5.png") 31;
+  background-image: none;
+  border-image-repeat: stretch;
+  background-repeat: no-repeat;
+  background-position: 50% -31px;
+  background-clip: border-box;
+  border-width: 31px;
+}
+
+.event::after {
+  }
+
+.event-splash {
+  display: inline-block;
+  clear: left;
+  max-width: 30%;
+  float: left;
+}
+
+.event-details {
+  display: inline-block;
+  max-width: 55%;
+  padding-left: 1em;
+ }
+ 
+ .event-poster {
+  position: relative;
+  margin: auto;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  overflow: hidden;
+  width: 40%;
+  margin-top: 37px;
+    border: 1px solid #ccc;
+  border-radius: 3px;
+ }
+ 
+ .event-poster:after {
+  content: "";
+  display: block;
+  
+  padding-bottom: 100%;
+ }
+ 
+ .event-poster > a > img {
+  padding: 0px;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  top: -20%;
+ }
+ .event > h2 {
+ 
+  margin: 18.7px 0px 18.7px 0px;
+ }
+ .event > h3 {
+  margin: 18.7px 0px 0px 0px;
+ }
+ .event > address {
+  height: 4em;
+ }
