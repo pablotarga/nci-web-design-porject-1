@@ -6,7 +6,6 @@
 	var eventArray = [];
 	$.getJSON('js/data_un.json', function (obj) {
 		eventArray = obj.eventList;
-		console.log("Loaded JSON");
 
 		//sorting: outer loop moves the *starting point* of the inner loop
 		//which traverses seeking the smallest member, which, if it isn't
@@ -26,14 +25,12 @@
 			//at the start of the traversal (i), swap it with the event
 			//at the start
 			if (positionOfEarliest != i) {
-				console.log("Swapped event at" + i + " with event at " + positionOfEarliest);
 				tempEventObj = eventArray[i];
 				eventArray[i] = eventArray[positionOfEarliest];
 				eventArray[positionOfEarliest] = tempEventObj;
 			}
 		}
 
-		console.log("eventArray.length is (before calling Pikaday) " + eventArray.length);
 		//buildDatePicker goes here so that events are loaded before the date picker is initialised,
 		//so that when the date picker's initialisation's setDate triggers a 'change' event in the original
 		//text field, the resulting call to regenerate(e) will have data to work with... so that the page
@@ -43,7 +40,6 @@
 	//Want to use jqHXR to have a fail method
 
 function buildDatePicker() {
-	console.log("Called date stuff");
 	dateWidget.addEventListener('change', regenerate);
 	var picker = new Pikaday({ field: $('#datepicker')[0], defaultDate: new Date(), setDefaultDate: true });
 }
@@ -61,7 +57,6 @@ function postfix(day) {
 
 function regenerate(e) {
 	let selectedDate = new Date(dateWidget.value);
-	console.log("eventArray.length is: " + eventArray.length);
 	var textHolder = '';
 
 	var list = document.querySelector('ul');
@@ -72,8 +67,6 @@ function regenerate(e) {
 	for (i = 0; i < eventArray.length; i++) {
 
 		let eventDate = new Date(eventArray[i].eventDate);
-		console.log(eventDate.getTime());
-		console.log(selectedDate.getTime());
 
 		if (selectedDate.getTime() <= eventDate.getTime()) {
 			var newListItem = document.createElement('li');
