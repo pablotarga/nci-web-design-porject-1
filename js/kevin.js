@@ -60,6 +60,7 @@ function regenerate(e) {
 	var textHolder = '';
 
 	var list = document.querySelector('ul');
+	list.innerHTML = '';
 
 
 
