@@ -1,10 +1,15 @@
 
-	let listElement = document.getElementById('events-html');
-	let dateWidget = document.getElementById('datepicker');
-	let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January'];
-	let countPostfix = ['st', 'nd', 'rd', 'th']
-	var eventArray = [];
-	$.getJSON('js/data_un.json', function (obj) {
+let listElement = document.getElementById('events-html');
+let dateWidget = document.getElementById('datepicker');
+let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'January'];
+let countPostfix = ['st', 'nd', 'rd', 'th']
+var eventArray = [];
+
+$.getJSON('js/data_un.json')
+	.fail(function () {
+		console.log('oopsie!!');
+	})
+	.done(function (obj) {
 		eventArray = obj.eventList;
 
 		//sorting: outer loop moves the *starting point* of the inner loop
@@ -37,7 +42,7 @@
 		//shows events from today's date on load without needing the user to select a date
 		buildDatePicker();
 	});
-	//Want to use jqHXR to have a fail method
+//Want to use jqHXR to have a fail method
 
 function buildDatePicker() {
 	dateWidget.addEventListener('change', regenerate);
